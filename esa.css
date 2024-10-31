@@ -1,0 +1,142 @@
+body{
+	background-color:rgb(255,255,252);
+	color:black;
+	font-family:arial,sans-serif;
+	margin:0;
+	font-size:.9em;
+	line-height:1.5em;
+}
+
+.fog{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(255,255,252,0.96);
+}
+
+.fogged{
+	opacity:0.5;
+}
+
+.logo{
+	margin-top:3vw;
+	margin-left:3vw;
+	max-height:8vh;
+}
+
+.logo img , .menubtn img {
+	max-height:8vh;
+}
+
+
+
+.menu{
+	margin:3vw;
+	padding-top:9vw;
+	max-width:22vw;
+	position:fixed;
+}
+
+.mobmenu{
+	position:fixed;
+	bottom:22vw;
+	text-align:right;
+	right:3vw;
+}
+
+.topbar{
+	width:22vw;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+}
+
+.menubtn{
+	display:none;
+	text-align:right;
+	text-justify:inter-word;
+}
+
+.body{
+	margin-left:20vw;
+	padding-top:12vw;
+	padding-bottom:3vw;
+	padding-right:8vw;
+}
+
+.body2{
+	margin-left:16vw;
+	position:absolute;
+	width:13vw;
+}
+
+.body3{
+	margin-left:32vw;
+	position:absolute;
+	width:40vw;
+}
+
+#ab:hover , #ad:hover , #na:hover , .op:hover{
+	opacity:0.5;
+	cursor:crosshair;
+}
+
+p{
+	margin:0;
+}
+
+.index{
+	max-height:8vh;
+}
+
+img , video{
+	max-width:100%;
+	max-height:50vh;;
+}
+
+@media screen and (max-aspect-ratio:1/1){
+	.topbar{
+	background-color:rgba(255,255,252,0.8);
+	bottom:0;
+	top:auto;
+	width:auto;
+}
+
+.mobh{
+	display:none;
+}
+
+.body{
+	padding:3vw;
+	margin:0;
+}
+
+
+.menubtn{
+	display:inline;
+	position:absolute;
+	width:fit-content;
+	right:0;
+	bottom:-0.5em;
+	margin:3vw;
+}
+
+.menu{
+	display:none;
+}
+
+.logo{
+	margin:3vw;
+}
+
+.body2{
+	margin-left:0;
+	width:65vw;
+}
+
+.body3{
+	width:60vw;
+}
