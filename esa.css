@@ -3,8 +3,13 @@ body{
 	color:black;
 	font-family:arial,sans-serif;
 	margin:0;
-	font-size:.9em;
-	line-height:1.5em;
+	font-size:1.7vh;
+	line-height:2.3vh;
+}
+
+a{
+	text-decoration:none;
+	color:rgb(150,150,200);
 }
 
 .fog{
@@ -13,7 +18,7 @@ body{
 	right:0;
 	top:0;
 	bottom:0;
-	background-color:rgba(255,255,252,0.96);
+	background-color:rgba(255,255,252,0.88);
 }
 
 .fogged{
@@ -61,23 +66,35 @@ body{
 }
 
 .body{
-	margin-left:20vw;
+	margin-left:15vw;
 	padding-top:12vw;
 	padding-bottom:3vw;
-	padding-right:8vw;
+	padding-right:5vw;
+	position:fixed;
+	width:fit-content;
 }
 
 .body2{
-	margin-left:16vw;
-	position:absolute;
-	width:13vw;
+	margin-left:35vw;
+	padding-top:12vw;
+	padding-bottom:3vw;
+	padding-right:5vw;
+	position:fixed;
 }
 
 .body3{
-	margin-left:32vw;
+	margin-left:55vw;
+	padding-top:12vw;
+	padding-bottom:3vw;
+	padding-right:5vw;
 	position:absolute;
-	width:40vw;
+	padding-bottom:15vh;
 }
+
+.init{
+	position:absolute;
+}
+
 
 #ab:hover , #ad:hover , #na:hover , .op:hover{
 	opacity:0.5;
@@ -97,8 +114,55 @@ img , video{
 	max-height:50vh;;
 }
 
-@media screen and (max-aspect-ratio:1/1){
-	.topbar{
+.script{
+	text-align:center;
+	font-family:courier,monospace;
+}
+
+#canvas{
+	background-color:rgb(255,255,252);
+	cursor:none;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+	max-width: 50%;
+    height: 15px;
+    background: none;
+    outline-color:black;
+    outline-width:1px;
+    outline-style:solid;
+    opacity:1;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width:18px;
+    height:10px;
+    background: linear-gradient(to left, transparent 10%, white 10%, white 90%, transparent 90%);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+    width: 10px;
+    height: 10px;
+    background:black;
+    cursor: pointer;
+}
+
+.high{
+	padding-top:6vw;
+}
+
+@media screen and (max-aspect-ratio:4/3){
+body{
+	font-size:2vh;
+	line-height:2.8vh;
+}
+
+.topbar{
 	background-color:rgba(255,255,252,0.8);
 	bottom:0;
 	top:auto;
@@ -133,10 +197,18 @@ img , video{
 }
 
 .body2{
-	margin-left:0;
-	width:65vw;
+	padding:3vw;
+	margin:0;
+	position:absolute;
 }
 
 .body3{
-	width:60vw;
+	padding:3vw;
+	top:15vh;
+	left:0;
+	width:94vw;
+	margin:0;
+	right:0;
+	padding-bottom:20vh;
 }
+
