@@ -46,7 +46,6 @@ function suc(){
 	canvas.width=w;
 	canvas.height=h;
 	//centers the canvas
-	canvas.style.left="0px";
 	canvas.style.top=((window.screen.height-h)/4)+"px";
 };
 

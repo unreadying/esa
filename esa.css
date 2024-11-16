@@ -12,13 +12,40 @@ a{
 	color:rgb(150,150,200);
 }
 
-.fog{
+.fogo{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(255,255,252,1);
+}
+
+.fogl{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(255,255,252,0.95);
+}
+
+.fogm{
 	position:fixed;
 	left:0;
 	right:0;
 	top:0;
 	bottom:0;
 	background-color:rgba(255,255,252,0.88);
+}
+
+.fogh{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(255,255,252,0.78);
 }
 
 .fogged{
@@ -95,11 +122,27 @@ a{
 	position:absolute;
 }
 
+.controls{
+	text-align:center;
+}
 
-#ab:hover , #ad:hover , #na:hover , .op:hover{
+
+#ab:hover , #ad:hover , #na:hover , .op:hover , #se:hover{
 	opacity:0.5;
 	cursor:crosshair;
 }
+
+.btn:hover{
+	opacity:0.5;
+	cursor:crosshair;
+}
+
+.btn{
+	border:1px solid black;
+	padding:.5vw;
+	margin:1vw;
+}
+
 
 p{
 	margin:0;
@@ -122,18 +165,19 @@ img , video{
 #canvas{
 	background-color:rgb(255,255,252);
 	cursor:none;
+	text-align:center;
 }
 
 .slider{
     -webkit-appearance: none;
     appearance: none;
-	max-width: 50%;
+	min-width: 50%;
     height: 15px;
     background: none;
-    outline-color:black;
-    outline-width:1px;
-    outline-style:solid;
+	border:3px solid black;
     opacity:1;
+	margin-left:5px;
+	margin-top:2vh;
 }
 
 .slider::-webkit-slider-thumb{
@@ -141,14 +185,14 @@ img , video{
     appearance: none;
     width:18px;
     height:10px;
-    background: linear-gradient(to left, transparent 10%, white 10%, white 90%, transparent 90%);
+    background: black;
     cursor: pointer;
 }
 
 .slider::-moz-range-thumb{
     width: 10px;
     height: 10px;
-    background:black;
+    background: black;
     cursor: pointer;
 }
 
@@ -156,11 +200,17 @@ img , video{
 	padding-top:6vw;
 }
 
+.mediumo , .small {
+	opacity:0.2;
+}
+
 @media screen and (max-aspect-ratio:4/3){
 body{
 	font-size:2vh;
 	line-height:2.8vh;
 }
+
+
 
 .topbar{
 	background-color:rgba(255,255,252,0.8);
@@ -176,6 +226,10 @@ body{
 .body{
 	padding:3vw;
 	margin:0;
+}
+
+.init{
+	padding-bottom:10vh;
 }
 
 
@@ -210,5 +264,30 @@ body{
 	margin:0;
 	right:0;
 	padding-bottom:20vh;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+
+    height: 50px;
+    background: none;
+    opacity:1;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width:18px;
+    height:10px;
+    background: linear-gradient(to left, transparent 10%, white 10%, white 90%, transparent 90%);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+    width: 50px;
+    height: 50px;
+    background: black;
+    cursor: pointer;
 }
 
