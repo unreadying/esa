@@ -35,7 +35,7 @@ const nadlist =
 ['npfr','no plan for revenge'],
 ['401','401'],
 ['3d','shape generator'],
-['adc','analog digital'],
+['ss','sos'],
 ]
 
 
@@ -55,7 +55,7 @@ function newpage(e){
 	}if(e.target.id=="na" || e.target.id=="mna"){
 		cat = 'na'
 		geninfo(1,gennadlist());
-	}if(e.target.id=="ab" || e.target.id=="mab"){
+	}if(e.target.id=="ab" || e.target.id=="mab" || e.target.id=="esa"){
 		cat = 'ab'
 		geninfo(1,"<p><img src='notads/stover.jpg'><br>evan stover is a settler living on the historical home-land of the lək̓ʷəŋiʔnəŋ  ( Lekwungen ) People and the general territory of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two afformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative psudo concept agency called <a href='https://adandad.ca'> ad&ad </a> which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested advertising oriented individual with considerable experience in design , programming , illustration and writing . if you don't believe me , view his work right here on this webpage . <br><br><br><br><br><br></p>")
 	}if(e.target.id=="se" || e.target.id=="mse"){
@@ -75,7 +75,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="bs"){
-	genwork(e,"these advertisements represent the culmination of my research into the body shop's decline since its 2006 aquisition by l'oreal . it was an assignment given to me by my research professor ( and strategy genius ) Richard Fofana ; we were asked to pick a failing and controversial brand ( the body shop in my case ), research the controversy , create a relavent brief , and ideate a creative campaign . after conducting a survey and looking online , i made two key conclusions <br><br> 1 : customers are confused about the body shops ethicality <br><br> 2 : customers are confused about ethical brands / ethical shopping in general <br><br> my goal was clear : demystify ethical brands <br><br> with this insight , i conceptualized a campaign using tarot imagery to represent the 'mystical' world of ethics , along with sans serif text representing the 'demystified' truth about the body shop","<img src=ads/bs1.png><img src=ads/bs2.png>");
+	genwork(e,"these advertisements represent the culmination of my research into the body shop's decline since its 2006 aquisition by l'oreal . it was an assignment given to me by my research professor ( and strategy genius ) Richard Fofana ; we were asked to pick a failing and controversial brand ( the body shop in my case ), research the controversy , create a relavent brief , and ideate a creative campaign . after conducting a survey and looking online , i made two key conclusions <br><br> 1 : customers are confused about the body shops ethicality <br><br> 2 : customers are confused about ethical brands / ethical shopping in general <br><br> my goal was clear : demystify ethical brands <br><br> with this insight , i conceptualized a campaign using tarot imagery to represent the 'mystical' world of ethics , along with sans serif text representing the 'demystified' truth about the body shop","<img src=ads/bs1.jpg><img src=ads/bs2.jpg><br><br><br><br><img src=ads/bs3.jpg><img src=ads/bs4.jpg>");
 	}
 	
 	if(e.target.id=="bq"){
@@ -91,19 +91,19 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="ho"){
-	genwork(e,"this one is a full pitch deck , so im not sure how neccesary a statement is<br><br>for this project i collaborated with my friend Richard Singh , i did copy and he did the art .","<img src='ho1.jpg'><img src='ho2.jpg'><img src='ho3.jpg'><img src='ho4.jpg'>")
+	genwork(e,"this one is a full pitch deck , so im not sure how neccesary a statement is<br><br>for this project i collaborated with my friend Richard Singh , i did copy and he did the art .","<img style='max-height:100vh' src='ads/ho1.jpg'><img style='max-height:100vh' src='ads/ho2.jpg'><img style='max-height:100vh' src='ads/ho3.jpg'><img style='max-height:100vh' src='ads/ho4.jpg'>")
 	}
 	
 	if(e.target.id=="ms"){
-	genwork(e,"ebay has a reputation for being full of scammers ; in truth they offer robust buyer protection .<br><br>the insight is simply that . ebay protects you . ","<img src='ms1.jpg'><img src='ms2.jpg'><img src='ms3.jpg'>")
+	genwork(e,"these advertisements are for a ' river friendly ' soap company . the fact that not all soaps are river friendly made me think : what other products <i>should</i> be sustainable , yet aren't ? t shirts and ads . ","<img src='ads/ms1.jpg'><img src='ads/ms2.jpg'><img src='ads/ms3.jpg'>")
 	}
 	
 	if(e.target.id=="tl"){
-	genwork(e,"Anthony Kerr gave us this assignment : promote an app that brings the young and the elderly together","<img src='tl1.jpg'><img src='tl2.jpg'><img src='tl3.jpg'><img src='tl4.jpg'>")
+	genwork(e,"Anthony Kerr gave us this assignment : promote an app that brings the young and the elderly together","<img src='ads/tl1.jpg'><img src='ads/tl3.jpg'><img src='ads/tl4.jpg'><img src='ads/tl2.jpg'>")
 	}
 	
 	if(e.target.id=="yn"){
-	genwork(e,"Anthony Kerr gave us this assignment : create ads that bring people together","<img src='yn1.jpg'><img src='yn2.jpg'><img src='yn3.jpg'><img src='yn4.jpg'>")
+	genwork(e,"Anthony Kerr gave us this assignment : create ads that bring people together","<img src='ads/yn1.jpg'><img src='ads/yn2.jpg'><img src='ads/yn3.jpg'><img src='ads/yn4.jpg'>")
 	}
 	
 
@@ -117,15 +117,15 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="401"){
-	genwork(e,"four digital images mixed together , expressing a message about cars & roads<br><br>photoshopped by evan stover<br><br>photographed by evan stover with love from the warden ave hwy 401 overpass","<img src='notads/401.jpg'>")
+	genwork(e,"four digital images mixed together , expressing a message about cars & roads<br><br>photoshopped by evan stover<br><br>photographed by evan stover with love from the warden ave hwy 401 overpass","<a target='_blank' href ='notads/401.jpg'><img src='notads/401.jpg'></a>")
 	}
 	
 	if(e.target.id=="3d"){
 	threedee(e,'this program is my attempt to make a 3d shape generator using a 2d space with javascript . its definetly not perfect , but it can still create intertesting animations and shapes .');
 	}
 	
-	if(e.target.id=="adc"){
-	genwork(e,"i made this comic to demonstrate my understanding of analog vs digital . i barely got a passing grade","<img src='notads/ad1.jpg'><img src='notads/ad2.jpg'><img src='notads/ad3.jpg'><img src='notads/ad4.jpg'>");
+	if(e.target.id=="ss"){
+	genwork(e,"a reduction block print i made , based off of a 35mm film photo <br><br> 10 x 12 inch oil print on japanese kozo paper","<img src='notads/ss2.jpg'><br><br><img src='notads/ss1.jpg'>");
 	}
 	
 
@@ -232,7 +232,7 @@ window.scrollTo(0,0);
 		geninfo(2,"<p name='con' id='"+e.target.id+"' class='op'>content</p><br><p class='fogged'>statement</p>");
 		
 	}else{
-		if(typeof(newscript)=='object'){
+		if(typeof(newscript)=='object' && typeof(newdiv)=='object'){
 		document.head.removeChild(newscript);
 		document.querySelector(".content").removeChild(newdiv);
 		}
@@ -503,7 +503,7 @@ function menutog(){
 		
 		var span = document.createElement("span");
 		document.getElementById('me').src='back.png';
-		span.innerHTML = "<img class='index' id='mad' src='advertising.png'><br><br><br><img class='index' id='mna' src='notadvertising.png'><br><br><br><img class='index' id='mab' src='about.png'><br><br>";
+		span.innerHTML = "<img class='index' id='mad' src='advertising.png'><br><br><br><img class='index' id='mna' src='notadvertising.png'><br><br><br><img class='index' id='mab' src='about.png'><br><br><img class='index' id='se' src='settings.png'>";
 		span.classList.add("mobmenu");
 		fogmachine();
 		
