@@ -586,7 +586,7 @@ function geninfo(body,content){
 		if(div.offsetHeight>screen.height-(screen.height*.24)){
 			
 		div.style.position = 'absolute';
-
+		div.style.padding-bottom = '15vh';
 		
 		}
 		
