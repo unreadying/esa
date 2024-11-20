@@ -2,6 +2,16 @@ var ads = document.getElementById("ad");
 var notads = document.getElementById("na");
 var about = document.getElementById("ab");
 
+new Image().src='notadvertising.png';
+new Image().src='contact.png';
+new Image().src='about.png';
+new Image().src='advertising.png';
+new Image().src='settings';
+new Image().src='back.png';
+
+
+document.body.addEventListener("mousedown",newpage,false);
+
 
 var cat = 'ab';
 var menu = false;
@@ -12,8 +22,8 @@ var lastdiv;
 var newdiv;
 var newscript = undefined;
 var fs = 1;
-var oe = 3;
-var foglevel = 'fogm';
+var oe = 2;
+var foglevel = 'fogl';
 
 
 const adlist = 
@@ -38,13 +48,24 @@ const nadlist =
 ['ss','sos'],
 ]
 
+const indexlist = 
+[
+['ad','advertising'],
+['na','not advertising'],
+['ab','about'],
+['co','contact'],
+['se','settings'],
+]
 
-new Image().src='about.png';
-new Image().src='advertising.png';
-new Image().src='back.png';
+const mindexlist = 
+[
+['ad','advertising.png'],
+['na','notadvertising.png'],
+['ab','about.png'],
+['co','contact.png'],
+['se','settings.png'],
+]
 
-
-document.body.addEventListener("mousedown",newpage,false);
 
 
 function newpage(e){
@@ -57,9 +78,11 @@ function newpage(e){
 		geninfo(1,gennadlist());
 	}if(e.target.id=="ab" || e.target.id=="mab" || e.target.id=="esa"){
 		cat = 'ab'
-		geninfo(1,"<p><img src='notads/stover.jpg'><br>evan stover is a settler living on the historical home-land of the lək̓ʷəŋiʔnəŋ  ( Lekwungen ) People and the general territory of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two afformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative psudo concept agency called <a href='https://adandad.ca'> ad&ad </a> which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested advertising oriented individual with considerable experience in design , programming , illustration and writing . if you don't believe me , view his work right here on this webpage . <br><br><br><br><br><br></p>")
+		geninfo(1,"<p><img src='notads/stover.jpg'><br>evan stover is a settler living on the historical home-land of the lək̓ʷəŋiʔnəŋ  ( Lekwungen ) People and the general territory of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two afformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative psudo concept agency called <a href='https://adandad.ca'> ad&ad </a> which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested advertising oriented individual with considerable experience in design , programming , illustration and writing . if you don't believe me , view his work right here on this webpage .</p>")
+	}if(e.target.id=="co" || e.target.id=="mco"){
+		cat = 'co'
+		geninfo(1,"<p class='mobh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by clicking the image above</p><p class='comh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by tapping the image above</p>");
 	}if(e.target.id=="se" || e.target.id=="mse"){
-		
 		cat = 'se'
 		geninfo(1,"<p>font size<br><br><br><span id='small' class='small btn'>small</span><span id='medium' class='medium btn'>medium</span><span id='large' class='large btn'>large</span><br><br><br><br><br><br><br><br>onionskin effect<br><br><br><span id='off' class='off btn'>off</span><span id='low' class='low btn'>low</span><span id='mediumo' class='mediumo btn'>medium</span><span id='high' class='higho btn'>high</span></p>");
 	setcheck(e);
@@ -136,7 +159,9 @@ function newpage(e){
 		setcheck(e);
 	}
 	
-	if(e.target.id!="me"){document.getElementById('me').src='menu.png';}
+	if(e.target.id!="me"){
+			if(menu==true){menutog();}
+		document.getElementById('me').src='menu.png';}
 }
 
 function setcheck(e){
@@ -173,6 +198,7 @@ function setcheck(e){
 			foglevel = 'fogl';
 			lastfog.classList.remove(lastfog.classList);
 			lastfog.classList.add(foglevel);
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,0.95)'
 		}
 		if(e.target.id=="mediumo" || oe==3){
 			document.getElementById('mediumo').style.opacity='0.2'
@@ -180,6 +206,7 @@ function setcheck(e){
 			foglevel = 'fogm';
 			lastfog.classList.remove(lastfog.classList);
 			lastfog.classList.add(foglevel);
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,0.88)'
 		}
 		if(e.target.id=="high" || oe==4){
 			document.getElementById('high').style.opacity='0.2'
@@ -187,6 +214,7 @@ function setcheck(e){
 			foglevel = 'fogh';
 			lastfog.classList.remove(lastfog.classList);
 			lastfog.classList.add(foglevel);
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,0.78)'
 		}
 		if(e.target.id=="off" || oe==1){
 			document.getElementById('off').style.opacity='0.2'
@@ -194,6 +222,7 @@ function setcheck(e){
 			foglevel = 'fogo';
 			lastfog.classList.remove(lastfog.classList);
 			lastfog.classList.add(foglevel);
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,1)'
 		}
 		if(oe!==1){
 		document.getElementById('off').style.opacity='1';
@@ -250,7 +279,7 @@ window.scrollTo(0,0);
 	
 		
 		var div2 = document.createElement("div");
-		div2.innerHTML = '<p id="ad">advertising</p><br><p><br></p><br><p id="ab">about</p><br><p id="se">settings</p>';
+		div2.innerHTML = genindexlist();
 		div2.classList.add("menu");
 		document.querySelector(".content").appendChild(div2);
 		
@@ -308,6 +337,30 @@ function gennadlist(){
 		for(i=0;i<nadlist.length;i++){
 		div += "<p class='op' id='"+nadlist[i][0]+"'>"+nadlist[i][1]+"</p><br>"
 		}
+		return div;
+}
+
+function genindexlist(){
+	var div='';
+	for(i=0;i<indexlist.length;i++){
+	if(indexlist[i][0]==cat){
+		div += "<br><br>";
+	}else{
+		div += "<p id='"+indexlist[i][0]+"'>"+indexlist[i][1]+"</p><br>"
+	}
+	}
+		return div;
+}
+
+function genmindexlist(){
+	var div='';
+	for(i=0;i<mindexlist.length;i++){
+	if(mindexlist[i][0]==cat){
+		div += "";
+	}else{
+		div += "<img class='index' id='"+mindexlist[i][0]+"' src='"+mindexlist[i][1]+"'><br><br>"
+	}
+	}
 		return div;
 }
 
@@ -391,9 +444,12 @@ function geninfo(body,content){
 			if(document.getElementById('se')!=null){
 		document.getElementById('se').removeAttribute('id');
 			}
+			if(document.getElementById('co')!=null){
+		document.getElementById('co').removeAttribute('id');
+			}
 		
 		var div = document.createElement("div");
-		div.innerHTML = '<p><br></p><br><p id="na">not advertising</p><br><p id="ab">about</p><br><p id="se">settings</p>';
+		div.innerHTML = genindexlist();
 		div.classList.add("menu");
 		document.querySelector(".content").appendChild(div);
 		
@@ -413,9 +469,12 @@ function geninfo(body,content){
 			if(document.getElementById('se')!=null){
 		document.getElementById('se').removeAttribute('id');
 			}
+			if(document.getElementById('co')!=null){
+		document.getElementById('co').removeAttribute('id');
+			}
 		
 		var div = document.createElement("div");
-		div.innerHTML = '<p id="ad">advertising</p><br><p id="na">not advertising</p><br><p><br></p><br><p id="se">settings</p>';
+		div.innerHTML = genindexlist();
 		div.classList.add("menu");
 		document.querySelector(".content").appendChild(div);
 		
@@ -434,9 +493,12 @@ function geninfo(body,content){
 			if(document.getElementById('se')!=null){
 		document.getElementById('se').removeAttribute('id');
 			}
+			if(document.getElementById('co')!=null){
+		document.getElementById('co').removeAttribute('id');
+			}
 		
 		var div = document.createElement("div");
-		div.innerHTML = '<p id="ad">advertising</p><br><p><br></p><br><p id="ab">about</p><br><p id="se">settings</p>';
+		div.innerHTML = genindexlist();
 		div.classList.add("menu");
 		document.querySelector(".content").appendChild(div);
 		
@@ -454,6 +516,9 @@ function geninfo(body,content){
 			}
 			if(document.getElementById('se')!=null){
 		document.getElementById('se').removeAttribute('id');
+			}
+			if(document.getElementById('co')!=null){
+		document.getElementById('co').removeAttribute('id');
 			}
 			
 			if(document.getElementById('small')!=null){
@@ -479,18 +544,51 @@ function geninfo(body,content){
 			}
 		
 		var div = document.createElement("div");
-		div.innerHTML = '<p id="ad">advertising</p><br><p id="na">not advertising<br></p><br><p id="ab">about</p>';
+		div.innerHTML = genindexlist();
 		div.classList.add("menu");
 		document.querySelector(".content").appendChild(div);
 		
+		}
+		
+		if(cat=='co'){
+			if(document.getElementById('ad')!=null){
+		document.getElementById('ad').removeAttribute('id');
+			}
+			if(document.getElementById('na')!=null){
+		document.getElementById('na').removeAttribute('id');
+			}
+			if(document.getElementById('ab')!=null){
+		document.getElementById('ab').removeAttribute('id');
+			}
+			if(document.getElementById('se')!=null){
+		document.getElementById('se').removeAttribute('id');
+			}
+			if(document.getElementById('co')!=null){
+		document.getElementById('co').removeAttribute('id');
+			}
+		
+		var div = document.createElement("div");
+		div.innerHTML = genindexlist();
+		div.classList.add("menu");
+		document.querySelector(".content").appendChild(div);
+			
 		}
 		}
 				var div = document.createElement("div");
 		div.innerHTML = content;
 		//div.style.position = 'fixed';
 		div.classList.add('body'+body+'');
+
+		
+		
 		document.querySelector(".content").appendChild(div);
-	
+		console.log(div.offsetHeight,screen.height-(screen.height*.24))
+		if(div.offsetHeight>screen.height-(screen.height*.24)){
+			
+		div.style.position = 'absolute';
+
+		
+		}
 		
 
 	
@@ -503,7 +601,7 @@ function menutog(){
 		
 		var span = document.createElement("span");
 		document.getElementById('me').src='back.png';
-		span.innerHTML = "<img class='index' id='mad' src='advertising.png'><br><br><br><img class='index' id='mna' src='notadvertising.png'><br><br><br><img class='index' id='mab' src='about.png'><br><br><img class='index' id='se' src='settings.png'>";
+		span.innerHTML = genmindexlist();
 		span.classList.add("mobmenu");
 		fogmachine();
 		

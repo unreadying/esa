@@ -127,7 +127,7 @@ a{
 }
 
 
-#ab:hover , #ad:hover , #na:hover , .op:hover , #se:hover{
+#ab:hover , #ad:hover , #na:hover , .op:hover , #se:hover , #co:hover , #mab:hover , #mad:hover , #mna:hover , .op:hover , #mse:hover , #mco:hover{
 	opacity:0.5;
 	cursor:crosshair;
 }
@@ -154,6 +154,7 @@ p{
 
 img{
 	max-height:50vh;
+	max-width:94vw;
 }
 
 .body3 img{
@@ -213,6 +214,14 @@ img{
 	opacity:0.2;
 }
 
+.comh{
+	display:none;
+}
+
+.mobh{
+	display:block;
+}
+
 @media screen and (max-aspect-ratio:4/3){
 body{
 	font-size:2vh;
@@ -222,11 +231,11 @@ body{
 .btn{
 	border:4px solid black;
 	padding:3vw;
-	margin:6vw;
+	margin:3vw;
 }
 
 .topbar{
-	background-color:rgba(255,255,252,0.8);
+	background-color:rgba(255,255,252,0.88);
 	bottom:0;
 	top:auto;
 	width:auto;
@@ -234,6 +243,9 @@ body{
 
 .mobh{
 	display:none;
+}
+.comh{
+	display:block;
 }
 
 .body{
