@@ -8,6 +8,7 @@ new Image().src='about.png';
 new Image().src='advertising.png';
 new Image().src='settings';
 new Image().src='back.png';
+new Image().src='notads/underpass.jpg';
 
 
 document.body.addEventListener("mousedown",newpage,false);
@@ -81,7 +82,7 @@ function newpage(e){
 		geninfo(1,"<p><img src='notads/stover.jpg'><br>evan stover is a settler living on the historical home-land of the lək̓ʷəŋiʔnəŋ  ( Lekwungen ) People and the general territory of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two afformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative psudo concept agency called <a href='https://adandad.ca'> ad&ad </a> which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested advertising oriented individual with considerable experience in design , programming , illustration and writing . if you don't believe me , view his work right here on this webpage .</p>")
 	}if(e.target.id=="co" || e.target.id=="mco"){
 		cat = 'co'
-		geninfo(1,"<p class='mobh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by clicking the image above</p><p class='comh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by tapping the image above</p>");
+		geninfo(1,"<p class='mobh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by clicking the image above .</p><p class='comh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by tapping the image above .</p>");
 	}if(e.target.id=="se" || e.target.id=="mse"){
 		cat = 'se'
 		geninfo(1,"<p>font size<br><br><br><span id='small' class='small btn'>small</span><span id='medium' class='medium btn'>medium</span><span id='large' class='large btn'>large</span><br><br><br><br><br><br><br><br>onionskin effect<br><br><br><span id='off' class='off btn'>off</span><span id='low' class='low btn'>low</span><span id='mediumo' class='mediumo btn'>medium</span><span id='high' class='higho btn'>high</span></p>");
@@ -114,7 +115,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="ho"){
-	genwork(e,"this one is a full pitch deck , so im not sure how neccesary a statement is<br><br>for this project i collaborated with my friend Richard Singh , i did copy and he did the art .","<img style='max-height:100vh' src='ads/ho1.jpg'><img style='max-height:100vh' src='ads/ho2.jpg'><img style='max-height:100vh' src='ads/ho3.jpg'><img style='max-height:100vh' src='ads/ho4.jpg'>")
+	genwork(e,"for this project i collaborated with my friend Richard Singh , we collaborated on the concept , then i did the copy and he did the art .","<img style='max-height:100vh' src='ads/ho1.jpg'><img style='max-height:100vh' src='ads/ho2.jpg'><img style='max-height:100vh' src='ads/ho3.jpg'><img style='max-height:100vh' src='ads/ho4.jpg'>")
 	}
 	
 	if(e.target.id=="ms"){
@@ -586,7 +587,7 @@ function geninfo(body,content){
 		if(div.offsetHeight>screen.height-(screen.height*.24)){
 			
 		div.style.position = 'absolute';
-		div.style.padding-bottom = '15vh';
+		div.style.paddingBottom = '15vh';
 		
 		}
 		
