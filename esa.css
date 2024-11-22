@@ -81,7 +81,7 @@ a{
 }
 
 .topbar{
-	width:22vw;
+	width:12vw;
 	position:fixed;
 	left:0;
 	right:0;
@@ -175,7 +175,7 @@ img{
 }
 
 #canvas{
-	background-color:rgb(255,255,252);
+	background-color:rgba(255,255,252,0);
 	cursor:none;
 	text-align:center;
 }
@@ -297,7 +297,7 @@ body{
     -webkit-appearance: none;
     appearance: none;
 
-    height: 50px;
+    height: 3vh;
     background: none;
     opacity:1;
 }
@@ -312,8 +312,8 @@ body{
 }
 
 .slider::-moz-range-thumb{
-    width: 50px;
-    height: 50px;
+    width: 3vh;
+    height: 3vh;
     background: black;
     cursor: pointer;
 }

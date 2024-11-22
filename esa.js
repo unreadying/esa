@@ -47,6 +47,7 @@ const nadlist =
 ['401','401'],
 ['3d','shape generator'],
 ['ss','sos'],
+//['wd','websites']
 ]
 
 const indexlist = 
@@ -68,24 +69,37 @@ const mindexlist =
 ]
 
 
+if(window.localStorage.getItem("fs")!=="null"){
+fs=window.localStorage.getItem("fs");
+}
+if(window.localStorage.getItem("oe")!=="null"){
+oe=window.localStorage.getItem("oe");
+}
+setcheck('init');
+
 
 function newpage(e){
 	
 	if(e.target.id=="ad" || e.target.id=="mad"){
 		cat = 'ad';
 		geninfo(1,genadlist());
+		window.scrollTo(0,0);
 	}if(e.target.id=="na" || e.target.id=="mna"){
 		cat = 'na'
 		geninfo(1,gennadlist());
+		window.scrollTo(0,0);
 	}if(e.target.id=="ab" || e.target.id=="mab" || e.target.id=="esa"){
 		cat = 'ab'
 		geninfo(1,"<p><img src='notads/stover.jpg'><br>evan stover is a settler living on the historical home-land of the lək̓ʷəŋiʔnəŋ  ( Lekwungen ) People and the general territory of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two afformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative psudo concept agency called <a href='https://adandad.ca'> ad&ad </a> which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested advertising oriented individual with considerable experience in design , programming , illustration and writing . if you don't believe me , view his work right here on this webpage .</p>")
+		window.scrollTo(0,0);
 	}if(e.target.id=="co" || e.target.id=="mco"){
 		cat = 'co'
 		geninfo(1,"<p class='mobh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by clicking the image above .</p><p class='comh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by tapping the image above .</p>");
+		window.scrollTo(0,0);
 	}if(e.target.id=="se" || e.target.id=="mse"){
 		cat = 'se'
-		geninfo(1,"<p>font size<br><br><br><span id='small' class='small btn'>small</span><span id='medium' class='medium btn'>medium</span><span id='large' class='large btn'>large</span><br><br><br><br><br><br><br><br>onionskin effect<br><br><br><span id='off' class='off btn'>off</span><span id='low' class='low btn'>low</span><span id='mediumo' class='mediumo btn'>medium</span><span id='high' class='higho btn'>high</span></p>");
+		geninfo(1,"<p>font size<br><br><br><span id='small' class='small btn'>small</span><span id='medium' class='medium btn'>medium</span><span id='large' class='large btn'>large</span><br><br><br><br><br><br><br><br>onionskin effect<br><br><br><span id='off' class='off btn'>off</span><span id='low' class='low btn'>low</span><span class='comh'><br><br><br></span><span id='mediumo' class='mediumo btn'>medium</span><span id='high' class='higho btn'>high</span></p>");
+		window.scrollTo(0,0);
 	setcheck(e);
 	}
 	
@@ -95,7 +109,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="iatd"){
-	genwork(e,"'i am the devil' is a commercial for a hot new mobile game . i wanted to make a commercial that would drive interest in both the game and the creator . <br><br>it was written & directed by evan stover , and edited by Jacob Sulli <br><br> it stars Jacob Sulli , Dose Omoruna & evan stover <br><br> total budget was $0","<video controls src='ads/iatd.mp4'>");
+	genwork(e,"'i am the devil' is a commercial for a hot new mobile game . i wanted to make a commercial that would drive interest in both the game and the creator . <br><br>it was written & directed by evan stover , and edited by Jacob Sulli <br><br> it stars Jacob Sulli , Dose Omoruna & evan stover <br><br> total budget was $0","<video width='3840' controls src='ads/iatd.mp4'>");
 	}
 	
 	if(e.target.id=="bs"){
@@ -107,7 +121,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="bd"){
-	genwork(e,"if you havn't seen Micheal Bay's black & decker TV ads , id recomend clicking <a>here</a> or <a>here</a> to watch them .<br><br>my black & decker ads ( mockups ) are a direct continuation of that campaign .<br><br>in order to adapt the commercials to print , i distilled the Micheal Bay ads into three key moments<br><br>the trouble ( ex : falling out of a plane )<br><br>the solution ( ex : makeshift black & decker helicopter )<br><br>the escape ( ex : saftely driving away )<br><br>so i to keep the tone of the campaign , i decided to create still images with all three steps depicted at once . each mockup contains a story that needs to be unraveled by the viewer ; obviously a final version would have better visuals , idealy using photography .","<img src='ads/bd2.jpg'><br><br><p>if there's no way out ... make one </p><img src='ads/bd1.jpg'>");
+	genwork(e,"if you havn't seen Micheal Bay's black & decker TV ads , id recomend clicking <a href='https://www.youtube.com/watch?v=GSJ4Y0ghUME'>here</a> or <a href='https://www.youtube.com/watch?v=z_oDvznQ5bo'>here</a> to watch them .<br><br>my black & decker ads ( mockups ) are a direct continuation of that campaign .<br><br>in order to adapt the commercials to print , i distilled the Micheal Bay ads into three key moments<br><br>the trouble ( ex : falling out of a plane )<br><br>the solution ( ex : makeshift black & decker helicopter )<br><br>the escape ( ex : saftely driving away )<br><br>so i to keep the tone of the campaign , i decided to create still images with all three steps depicted at once . each mockup contains a story that needs to be unraveled by the viewer ; obviously a final version would have better visuals , idealy using photography .","<img src='ads/bd2.jpg'><br><br><p>if there's no way out ... make one </p><img src='ads/bd1.jpg'>");
 	}
 	
 	if(e.target.id=="eb"){
@@ -115,19 +129,19 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="ho"){
-	genwork(e,"for this project i collaborated with my friend Richard Singh , we collaborated on the concept , then i did the copy and he did the art .","<img style='max-height:100vh' src='ads/ho1.jpg'><img style='max-height:100vh' src='ads/ho2.jpg'><img style='max-height:100vh' src='ads/ho3.jpg'><img style='max-height:100vh' src='ads/ho4.jpg'>")
+	genwork(e,"a very typical assignment from my ad professors was : pick an existing campaign and continue it . this time it was Louise Sheedy who told me to do that . <br><br> i picked <a href=ads/corn.jpg target='_blank'>this cool honda ad</a> and my group was promptly instructed to adapt it for video , so thats what we did .<br><br> for this project i collaborated with my friend <a target='_blank' href='https://singh-richard.format.com'>Richard Singh</a> , we collaborated on the concept , then i did the copy and he did the art .","<img style='max-height:100vh' src='ads/ho1.jpg'><img style='max-height:100vh' src='ads/ho2.jpg'><img style='max-height:100vh' src='ads/ho3.jpg'><img style='max-height:100vh' src='ads/ho4.jpg'>")
 	}
 	
 	if(e.target.id=="ms"){
-	genwork(e,"these advertisements are for a ' river friendly ' soap company . the fact that not all soaps are river friendly made me think : what other products <i>should</i> be sustainable , yet aren't ? t shirts and ads . ","<img src='ads/ms1.jpg'><img src='ads/ms2.jpg'><img src='ads/ms3.jpg'>")
+	genwork(e,"these advertisements are for a ' river friendly ' soap company . the fact that not all soaps are river friendly made me think : what other products <i>should</i> be sustainable , yet aren't ? <br><br> there are so many objects that are created with no thought to the ecological and ethical implications ; even the very medium of physical advertisments are creating polution . that is the premise of this campaign . <br><br> if mountain sky is a sustainable company , then their ads will be no exception . ","<img src='ads/ms1.jpg'><img src='ads/ms2.jpg'><img src='ads/ms3.jpg'>")
 	}
 	
 	if(e.target.id=="tl"){
-	genwork(e,"Anthony Kerr gave us this assignment : promote an app that brings the young and the elderly together","<img src='ads/tl1.jpg'><img src='ads/tl3.jpg'><img src='ads/tl4.jpg'><img src='ads/tl2.jpg'>")
+	genwork(e,"Anthony Kerr gave us this assignment : conceptualize and promote an app that brings the young (16-30) and the elderly (76-90)  together . <br><br> the problem , acording to Anonthony Kerr , is that youths do not attempt to create friendships with those much older than them , especially not the elderly ; thus the challenge is to provide a reason for a young person to seek out a friendship bond with an elderly person . <br><br> my solution was to conceptualize an app with the capability of matching personalities ; signing up would involve taking a quiz asking a variety of questions like : what kind of music do you like , what are your goals , etc , with the purpose of grouping users into types independent of age . the idea is that this app could match young people up to an elder who understands them and their way of thinking , creating an immetiate connection . <br><br>adfter conceptualizing this idea , i named the app 'timeline' to reflect a position of 'meeting your future/past self' which emphasizes the benifit of the apps matching abilities . ","<img src='ads/tl1.jpg'><img src='ads/tl3.jpg'><img src='ads/tl4.jpg'><img src='ads/tl2.jpg'>")
 	}
 	
 	if(e.target.id=="yn"){
-	genwork(e,"Anthony Kerr gave us this assignment : create ads that bring people together","<img src='ads/yn1.jpg'><img src='ads/yn2.jpg'><img src='ads/yn3.jpg'><img src='ads/yn4.jpg'>")
+	genwork(e,"Anthony Kerr gave us this assignment : create ads that bring people together .<br><br> after struggling for a while , i came up with a solution that speaks for itself . <br><br> regardless i will speak for it anyways : people are often brought together by a common interest : it gives them something to do and talk about together , and often reflects shared values . the more <i>niche</i> this interest , the more happy one is to find others who share it . this was a big insight for me , and guided the rest of the campaign . <br><br> by allowing people to announce their interests in an slightly humorous and non obnoxious way , yourniche can spark a positive moment that makes everyday life just a bit less boring .","<img src='ads/yn1.jpg'><img src='ads/yn2.jpg'><img src='ads/yn3.jpg'><img src='ads/yn4.jpg'>")
 	}
 	
 
@@ -149,9 +163,12 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="ss"){
-	genwork(e,"a reduction block print i made , based off of a 35mm film photo <br><br> 10 x 12 inch oil print on japanese kozo paper","<img src='notads/ss2.jpg'><br><br><img src='notads/ss1.jpg'>");
+	genwork(e,"a reduction wood block print i made , based off of a 35mm film photo <br><br> 10 x 12 inch oil print on japanese kozo paper","<img src='notads/ss2.jpg'><br><br><img src='notads/ss1.jpg'>");
 	}
-	
+
+	if(e.target.id=="wd"){
+	genwork(e,"i've been coding websites since 2022 <br><br> as an artistic medium javascript is very freeing","<br><a href='https://adandad.ca'>advertising & advertisements</a> <br><br> <a href='https://sashascars.ca'>sasha's cars</a><br><br><a href='https://xerelia.ca'>xerelia</a><br><br>and of course <a href='https://esadvertising.ca'>this very site</a>");
+	}
 
 	
 	
@@ -166,12 +183,51 @@ function newpage(e){
 }
 
 function setcheck(e){
+	
+	
+	if(fs==1){
+			document.body.style.fontSize='1.7vh'
+			document.body.style.lineHeight='2.3vh'
+			fs=1;
+		}
+		if(fs==2){
+			document.body.style.fontSize='2.2vh'
+			document.body.style.lineHeight='3vh'
+			fs=2;
+		}
+		if( fs==3){
+			document.body.style.fontSize='3vh'
+			document.body.style.lineHeight='4vh'
+			fs=3;
+		}
 
+		if(oe==2){
+			oe=2;
+			foglevel = 'fogl';
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,0.95)'
+		}
+		if(oe==3){
+			oe=3;
+			foglevel = 'fogm';
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,0.88)'
+		}
+		if(oe==4){
+			oe=4;
+			foglevel = 'fogh';
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,0.78)'
+		}
+		if(oe==1){
+			oe=1;
+			foglevel = 'fogo';
+			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,1)'
+		}
+	console.log(e);
+	if(e!=='init'){
 		if(e.target.id=="small" || fs==1){
 			document.getElementById('small').style.opacity='0.2'
 			document.body.style.fontSize='1.7vh'
 			document.body.style.lineHeight='2.3vh'
-			fs=1
+			fs=1;
 		}
 		if(e.target.id=="medium" || fs==2){
 			document.getElementById('medium').style.opacity='0.2'
@@ -225,6 +281,7 @@ function setcheck(e){
 			lastfog.classList.add(foglevel);
 			document.querySelector('.topbar').style.backgroundColor='rgba(255,255,252,1)'
 		}
+	
 		if(oe!==1){
 		document.getElementById('off').style.opacity='1';
 		}if(oe!==2){
@@ -234,6 +291,11 @@ function setcheck(e){
 		}if(oe!==4){
 		document.getElementById('high').style.opacity='1';
 		}
+	}
+	
+	window.localStorage.setItem("fs",fs);
+	window.localStorage.setItem("oe",oe);
+		
 	
 }
 
@@ -356,7 +418,7 @@ function genindexlist(){
 function genmindexlist(){
 	var div='';
 	for(i=0;i<mindexlist.length;i++){
-	if(mindexlist[i][0]==cat){
+	if(mindexlist[i][0]==cat && cat!=='ad'){
 		div += "";
 	}else{
 		div += "<img class='index' id='"+mindexlist[i][0]+"' src='"+mindexlist[i][1]+"'><br><br>"
