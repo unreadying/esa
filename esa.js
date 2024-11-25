@@ -418,7 +418,7 @@ function genindexlist(){
 function genmindexlist(){
 	var div='';
 	for(i=0;i<mindexlist.length;i++){
-	if(mindexlist[i][0]==cat && cat!=='ad'){
+	if(mindexlist[i][0]==cat && cat!=='ad' && cat!=='na'){
 		div += "";
 	}else{
 		div += "<img class='index' id='"+mindexlist[i][0]+"' src='"+mindexlist[i][1]+"'><br><br>"
