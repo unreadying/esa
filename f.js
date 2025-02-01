@@ -20,6 +20,8 @@ var width = 200;
 //number of corners on one side
 var nodes = 4;
 
+var canvas=document.getElementById("canvas");
+
 
 //this is the actual width calculation
 //lx,ly represents the middle of the left ellipse
@@ -40,7 +42,6 @@ draw();
 
 //set up canvas
 function suc(){
-	canvas=document.getElementById("canvas");
 	ctx=canvas.getContext("2d");
 	//width and height are somewhat dynamic
 	canvas.width=w;
@@ -95,6 +96,16 @@ function sunodes(){
 
 //animation loop
 function draw(){
+		if(window.innerWidth<window.innerHeight*1.33333){
+		w=window.innerWidth*0.9;
+		h=window.innerHeight*0.5;
+
+	}else{
+		w=window.innerWidth*0.3;
+		h=window.innerHeight*0.5;
+	}
+				canvas.width=w;
+	canvas.height=h;
 	//clear the canvas
 	ctx.clearRect(0,0,w,h);
 	//check sliders
@@ -114,6 +125,11 @@ function draw(){
 	ctx.strokeStyle = "black";
 	//and draw it all
 	ctx.stroke();
+	
+	//check window size
+	
+
+
 	
 	//loop
 	requestAnimationFrame(draw);

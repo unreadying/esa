@@ -186,7 +186,7 @@ img{
 	min-width: 50%;
     height: 15px;
     background: none;
-	border:3px solid black;
+
     opacity:1;
 	margin-left:5px;
 	margin-top:2vh;
@@ -298,18 +298,24 @@ body{
     appearance: none;
 
     height: 3vh;
-    background: none;
+    background: none !important;
     opacity:1;
 }
 
 .slider::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
-    width:18px;
-    height:10px;
-    background: linear-gradient(to left, transparent 10%, white 10%, white 90%, transparent 90%);
+    width:30px !important;
+    height:20px !important;
+    background: none !important;
     cursor: pointer;
 }
+
+.slider::-webkit-slider-runnable-track {
+    height: 3vh !important;
+    border-radius: 0px;
+}
+
 
 .slider::-moz-range-thumb{
     width: 3vh;
