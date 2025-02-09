@@ -192,8 +192,18 @@ input[type="range"]{
 	margin-top:2vh;
 }
 
-.slider::-webkit-slider-thumb::-moz-range-thumb{
+.slider::-webkit-slider-thumb{
     -webkit-appearance: none;
+	-moz-appearance:none;
+    appearance: none;
+    width:18px;
+    height:10px;
+    background: black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+	-webkit-appearance: none;
 	-moz-appearance:none;
     appearance: none;
     width:18px;
