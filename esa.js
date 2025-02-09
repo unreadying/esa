@@ -109,7 +109,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="iatd"){
-	genwork(e,"'i am the devil' is a commercial for a hot new mobile game . i wanted to make a commercial that would drive interest in both the game and the creator . <br><br>it was written & directed by evan stover , and edited by Jacob Sulli <br><br> it stars Jacob Sulli , Dose Omoruna & evan stover <br><br> total budget was $0","<video width='3840' controls src='ads/iatd.mp4'>");
+	genwork(e,"'i am the devil' is a commercial for a hot new mobile game . i wanted to make a commercial that would drive interest in both the game and the creator . <br><br>it was written , directed & edited by evan stover .<br><br> it stars Jacob Sulli , Dose Omoruna & evan stover <br><br> total budget was $0","<video width='3840' controls src='ads/iatd.mp4'>");
 	}
 	
 	if(e.target.id=="bs"){
@@ -159,7 +159,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="3d"){
-	threedee(e,'this program is my attempt to make a 3d shape generator using a 2d space with javascript . its definetly not perfect , but it can still create intertesting animations and shapes .');
+	threedee(e,"this program is my attempt to make a 3d shape generator using a 2d space with javascript . it's definetly not perfect , but it can still create interesting animations and shapes .");
 	}
 	
 	if(e.target.id=="ss"){
