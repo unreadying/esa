@@ -200,6 +200,8 @@ input[type="range"]{
     height:10px;
     background: black;
     cursor: pointer;
+	outline:none;
+	border:none;
 }
 
 .slider::-moz-range-thumb{
@@ -207,10 +209,39 @@ input[type="range"]{
 	-moz-appearance:none;
     appearance: none;
     width:18px;
-    height:10px;
+    height:15px;
     background: black;
     cursor: pointer;
+	outline:none;
+	border:none;
+	border-radius:0;
 }
+
+.slider::-moz-range-track{
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background:transparent;
+	outline:none;
+}
+
+.slider::-slider-runnable-track{
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background:transparent;
+	outline:none;
+}
+
+.slider::ms-track{
+		appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background:transparent;
+	outline:none;
+}
+
+
 
 
 .high{

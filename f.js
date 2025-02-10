@@ -6,7 +6,9 @@ var h = 500;
 //counter
 var c = 0;
 //array to hold x,y and offset of each node
-var node = [];
+var nodel = [];
+
+var noder = [];
 
 //shape variables , these are all modified by the user
 //width of ellipse
@@ -80,16 +82,25 @@ function slidercheck(){
 function sunodes(){
 	
 	//reset node array
-	node=[];
+	noder=[];
+	nodel=[];
 	//now make a number of node objects equal to nodes +1 (the plus one is for the last line between the first and last node)
 	for(i=0;i<(nodes+1);i++){
 		//assign each node an x, and a y
-		node.push({
+		nodel.push({
 			x:0,
 			y:0,
 			//assign each node an offset value based on the cirumfrence of the ellipse
 			//the cirumfrence seems to be 119.38 based on my trial and error testing
-			o:(119.38/nodes)*i,
+			o:(2 * Math.PI / nodes)*i,
+		})
+		
+		noder.push({
+			x:0,
+			y:0,
+			//assign each node an offset value based on the cirumfrence of the ellipse
+			//the cirumfrence seems to be 119.38 based on my trial and error testing
+			o:(2 * Math.PI / nodes)*i,
 		})
 	}
 }
@@ -138,7 +149,7 @@ function draw(){
 //calculate an ellipse function 
 //takes n (node number) x (center of ellipse) y (center of ellipse)
 //c (counter variable) and an orientation (1 for left rotating and anything else for right)
-function ellipse(n,x,y,c,orientation){
+function ellipse(nodearray,n,x,y,c,orientation){
 	
 	//check orientation
 	if(orientation==1){
@@ -146,24 +157,56 @@ function ellipse(n,x,y,c,orientation){
 	//the equation turns the counter variable into an elipse through the cos method
 	//while adding the offset of the specified node (this places the node that much further on the ellipse)
 	//also speed is encorporated here through a division of the counter variable
-	node[n].x=x-(a*Math.cos(node[n].o+c/speed));
+	nodearray[n].x=x-(a*Math.cos(nodearray[n].o+c/speed));
 	//same for y
-	node[n].y=y+(b*Math.sin(node[n].o+c/speed));
+	nodearray[n].y=y+(b*Math.sin(nodearray[n].o+c/speed));
 	}else{
 	//same for ellipse that spins the opposite direction (alternate "orientation")
-	node[n].x=x-(-a*Math.cos(node[n].o+c/speed));
-	node[n].y=y+(b*Math.sin(node[n].o+c/speed));	
+	nodearray[n].x=x-(a*Math.cos(nodearray[n].o+c/speed));
+	nodearray[n].y=y+(b*Math.sin(nodearray[n].o+c/speed));	
 	}
 	
 }
 
 
+function shape() {
+	ctx.beginPath();
+
+for(i=0;i<nodes+1;i++){
+	ellipse(nodel,i,lx,ly,c,1);
+	ellipse(noder,i,rx,ry,c,2);
+}
+
+ctx.moveTo(nodel[0].x,nodel[0].y);
+for (i=0;i<nodes+1;i++){
+	ctx.lineTo(nodel[i].x,nodel[i].y);
+}
+
+ctx.moveTo(noder[0].x,noder[0].y);
+for (i=0;i<nodes+1;i++){
+	ctx.lineTo(noder[i].x,noder[i].y);
+}
+
+for (i=0;i<nodes+1;i++){
+	ctx.moveTo(nodel[i].x,nodel[i].y);
+	ctx.lineTo(noder[i].x,noder[i].y);
+}
+
+ctx.stroke();
+
+
+
+}
+
+
+
+
 //this draws lines between nodes on the ellipse
-function shape(){
+function shapeorg(){
 	//for length of nodes +one
 	for(i=0;i<nodes+1;i++){
 	//so long as the first node has already been set
-	if(node[i].x!=0){
+	if(node[i].x!=0&&node[i].y!=0){
 	//then draw a line from the previous node to this one
 	ctx.lineTo(node[i].x,node[i].y)
 	};
