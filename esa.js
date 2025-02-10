@@ -313,7 +313,7 @@ function threedee(e,statement){
 		fog.classList.add(foglevel);
 		document.querySelector(".content").appendChild(fog);
 	
-var html='<canvas id="canvas"></canvas><div class="controls"><p>speed <input class="slider" id = "speed" value = "1" min = "0" max= "100" type = "range"></p><p>width <input class="slider" id = "width" value = "200" min = "0" max = "400" type = "range"></p><p>height <input class="slider" id = "height" value = "110" min = "0" max ="200" type = "range"></p><p>nodes <input class="slider" id = "nodes" value = "4" min = "0" max = "18" type = "range"></p><p>perspective <input class="slider" id = "perspective" value = "20" min = "0" max = "200" type = "range"></p></div>'
+var html='<canvas id="canvas"></canvas><div class="controls"><p>speed <input class="slider" id = "speed" value = "50" min = "0" max= "100" type = "range"></p><p>width <input class="slider" id = "width" value = "30" min = "0" max = "400" type = "range"></p><p>height <input class="slider" id = "height" value = "30" min = "0" max ="200" type = "range"></p><p>nodes <input class="slider" id = "nodes" value = "4" min = "0" max = "15" type = "range"></p><p>perspective <input class="slider" id = "perspective" value = "25" min = "0" max = "200" type = "range"></p></div>'
 	
 window.scrollTo(0,0);
 
