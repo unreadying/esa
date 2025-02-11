@@ -192,7 +192,7 @@ input[type="range"]{
 	margin-top:2vh;
 }
 
-.slider::-webkit-slider-thumb{
+input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
 	-moz-appearance:none;
     appearance: none;
@@ -331,22 +331,21 @@ body{
 
 
 
-.slider::-webkit-slider-thumb{
+input [type="range"]::-webkit-slider-thumb{
     width:30px !important;
     height:20px !important;
-    background: none !important;
+    background: black !important;
 }
-
-.slider::-webkit-slider-runnable-track {
+input [type="range"]::-webkit-slider-runnable-track {
     height: 20px !important;
     border-radius: 0px;
+	background:none !important;
 }
 
 
 .slider::-moz-range-thumb{
     width:30px !important;
     height:20px !important;
-    background: none !important;
 }
 
 .body3 img{

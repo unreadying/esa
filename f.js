@@ -10,6 +10,12 @@ var nodel = [];
 
 var noder = [];
 
+var rotate = true;
+
+var flip = false;
+
+var turn = false;
+
 //shape variables , these are all modified by the user
 //width of ellipse
 var a = 20;
@@ -18,7 +24,7 @@ var b = 110;
 //speed of rotation
 var speed = 100;
 //distance between ellipses
-var width = 200;
+var width = 20;
 //number of corners on one side
 var nodes = 4;
 
@@ -56,10 +62,14 @@ function suc(){
 function slidercheck(){
 	
 	//speed is reverse proportional so i made it more logical by subracting 101 from the slider (max value 100)
-	speed=101-document.getElementById("speed").value;
-	width=document.getElementById("width").value;
+	speed=(26-document.getElementById("speed").value)*10;
+
 	b=document.getElementById("height").value;
-	a=document.getElementById("perspective").value;
+
+	width=document.getElementById("width").value;
+	a=document.getElementById("perspective").value*b/75;
+			
+	
 	//nodes is the most tricky since it requires redstributing offset value each time
 	nodes=Number(document.getElementById("nodes").value);
 	//only under the condition that nodes changed between this loop and the previous loop
