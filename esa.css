@@ -332,20 +332,20 @@ body{
 
 
 input [type="range"]::-webkit-slider-thumb{
-    width:30px !important;
-    height:20px !important;
+    width:3vmax !important;
+    height:5vmin !important;
     background: black !important;
 }
 input [type="range"]::-webkit-slider-runnable-track {
-    height: 20px !important;
+    height: 5min !important;
     border-radius: 0px;
 	background:none !important;
 }
 
 
 .slider::-moz-range-thumb{
-    width:30px !important;
-    height:20px !important;
+    width:3vmax !important;
+    height:5vmin !important;
 }
 
 .body3 img{
