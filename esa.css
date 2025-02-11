@@ -331,12 +331,12 @@ body{
 
 
 
-input [type="range"]::-webkit-slider-thumb{
+input[type="range"]::-webkit-slider-thumb{
     width:3vmax !important;
     height:5vmin !important;
     background: black !important;
 }
-input [type="range"]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
     height: 5min !important;
     border-radius: 0px;
 	background:none !important;
