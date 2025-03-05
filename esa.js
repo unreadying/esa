@@ -6,7 +6,7 @@ new Image().src='notadvertising.png';
 new Image().src='contact.png';
 new Image().src='about.png';
 new Image().src='advertising.png';
-new Image().src='settings';
+new Image().src='settings.png';
 new Image().src='back.png';
 new Image().src='notads/underpass.jpg';
 
