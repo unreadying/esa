@@ -129,6 +129,7 @@ a{
 }
 
 
+
 #ab:hover , #ad:hover , #na:hover , .op:hover , #se:hover , #co:hover , #mab:hover , #mad:hover , #mna:hover , .op:hover , #mse:hover , #mco:hover{
 	opacity:0.5;
 	cursor:crosshair;
