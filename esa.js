@@ -37,7 +37,8 @@ const adlist =
 ['ho','honda'],
 ['ms','mountain sky'],
 ['tl','timeline'],
-['yn','your niche']
+['yn','your niche'],
+['m','bc dairy']
 ]
 
 const nadlist = 
@@ -142,6 +143,10 @@ function newpage(e){
 	
 	if(e.target.id=="yn"){
 	genwork(e,"Anthony Kerr gave us this assignment : create ads that bring people together .<br><br> after struggling for a while , i came up with a solution that speaks for itself . <br><br> regardless i will speak for it anyways : people are often brought together by a common interest : it gives them something to do and talk about together , and often reflects shared values . the more <i>niche</i> this interest , the more happy one is to find others who share it . this was a big insight for me , and guided the rest of the campaign . <br><br> by allowing people to announce their interests in an slightly humorous and non obnoxious way , yourniche can spark a positive moment that makes everyday life just a bit less boring .","<img src='ads/yn1.jpg'><img src='ads/yn2.jpg'><img src='ads/yn3.jpg'><img src='ads/yn4.jpg'>")
+	}
+	
+	if(e.target.id=='m'){
+	genwork(e,"the BC Dairy Foundation wanted someone to showcase the benefits of drinking milk , in order to get more people to drink milk . the ad they paid for was <a href='https://vimeo.com/groups/132679/videos/5830893'>this one<a> but i think they could do better . thats why i wrote this storyboard . <br><br> while drinking milk is seen as strange by younger generations , i found that it is much more normalized among gen x and older demographics . this led me to recall a story from my grandmother : as a child , her familly would vacation to a cottage on a small island in norther ontario . one of the essential supplies on this vacation was the familly cow , who could provide milk on demand . this idea of taking a cow on a boat to keep the family healthy is what inspired my final story . i wanted to show that milk is healthy , quick , and is brought to us by a nice cow .","<img src='ads/m1.jpg>""<img src='ads/m2.jpg>""<img src='ads/m3.jpg>""<img src='ads/m3text.jpg>""<img src='ads/m4.jpg>""<img src='ads/m5.jpg>""<img src='ads/m6.jpg>""<img src='ads/m7.jpg>""<img src='ads/m8.jpg>"
 	}
 	
 
