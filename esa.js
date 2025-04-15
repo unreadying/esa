@@ -146,7 +146,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=='m'){
-	genwork(e,"the BC Dairy Foundation wanted someone to showcase the benefits of drinking milk , in order to get more people to drink milk . the ad they paid for was <a href='https://vimeo.com/groups/132679/videos/5830893'>this one</a> but i think they could do better . thats why i wrote this storyboard . <br><br> while drinking milk is seen as strange by younger generations , i found that it is much more normalized among gen x and older demographics . this led me to recall a story from my grandmother : as a child , her familly would vacation to a cottage on a small island in norther ontario . one of the essential supplies on this vacation was the familly cow , who could provide milk on demand . this idea of taking a cow on a boat to keep the family healthy is what inspired my final story . i wanted to show that milk is healthy , quick , and is brought to us by a nice cow .","<img src='ads/m1.jpg'><img src='ads/m2.jpg'><img src='ads/m3.jpg'><img src='ads/m3text.jpg'><img src='ads/m4.jpg'><img src='ads/m5.jpg'><img src='ads/m6.jpg'><img src='ads/m7.jpg'><img src='ads/m8.jpg'>")
+	genwork(e,"the BC Dairy Foundation wanted someone to showcase the benefits of drinking milk , in order to get more people to drink milk . the ad they paid for was <a href='https://vimeo.com/groups/132679/videos/5830893'>this one</a> but i think they could do better . that's why i wrote this storyboard . <br><br> while drinking milk is seen as strange by younger generations , i found that it is much more normalized among gen x and older demographics . this led me to recall a story from my grandmother : as a child , her family would vacation to a cottage on a small island in norther ontario . one of the essential supplies on this vacation was the family cow , who could provide milk on demand . this idea of taking a cow on a boat to keep the family healthy is what inspired my final story . i wanted to show that milk is healthy , quick , and is brought to us by a nice cow .","<img src='ads/m1.jpg'><img src='ads/m2.jpg'><img src='ads/m3.jpg'><img src='ads/m3text.jpg'><img src='ads/m4.jpg'><img src='ads/m5.jpg'><img src='ads/m6.jpg'><img src='ads/m7.jpg'><img src='ads/m8.jpg'>")
 	}
 	
 
@@ -164,7 +164,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="3d"){
-	threedee(e,"this program is my attempt to make a 3d shape generator using a 2d space with javascript . it's definitely not perfect , but it can still create interesting animations and shapes .");
+	threedee(e,"this program is my attempt to make a 3d shape generator using a 2d space with javascript .");
 	}
 	
 	if(e.target.id=="ss"){
