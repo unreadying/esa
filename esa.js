@@ -142,7 +142,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="yn"){
-	genwork(e,"Anthony Kerr gave us this assignment : create ads that bring people together .<br><br> after struggling for a while , i came up with a solution that speaks for itself . <br><br> regardless i will speak for it anyways : people are often brought together by a common interest : it gives them something to do and talk about together , and often reflects shared values . the more <i>niche</i> this interest , the more happy one is to find others who share it . this was a big insight for me , and guided the rest of the campaign . <br><br> by allowing people to announce their interests in an slightly humorous and non obnoxious way , yourniche can spark a positive moment that makes everyday life just a bit less boring .","<img src='ads/yn1.jpg'><img src='ads/yn2.jpg'><img src='ads/yn3.jpg'><img src='ads/yn4.jpg'>")
+	genwork(e,"Anthony Kerr gave us this assignment : create ads that bring people together .<br><br> after struggling for a while , i came up with a solution that speaks for itself . <br><br> regardless i will speak for it anyways : people are often brought together by a common interest : it gives them something to do and talk about together , and often reflects shared values . the more <i>niche</i> this interest , the more happy one is to find others who share it . this was a big insight for me , and guided the rest of the campaign . <br><br> by allowing people to announce their interests in a slightly humorous and non obnoxious way , yourniche can spark a positive moment that makes everyday life just a bit less boring .","<img src='ads/yn1.jpg'><img src='ads/yn2.jpg'><img src='ads/yn3.jpg'><img src='ads/yn4.jpg'>")
 	}
 	
 	if(e.target.id=='m'){
