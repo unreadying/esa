@@ -48,7 +48,7 @@ const nadlist =
 ['401','401'],
 ['3d','shape generator'],
 ['ss','sos'],
-//['wd','websites']
+['pr','punk records']
 ]
 
 const indexlist = 
@@ -173,6 +173,10 @@ function newpage(e){
 
 	if(e.target.id=="wd"){
 	genwork(e,"i've been coding websites since 2022 <br><br> as an artistic medium javascript is very freeing","<br><a href='https://adandad.ca'>advertising & advertisements</a> <br><br> <a href='https://sashascars.ca'>sasha's cars</a><br><br><a href='https://xerelia.ca'>xerelia</a><br><br>and of course <a href='https://esadvertising.ca'>this very site</a>");
+	}
+	
+	if(e.target.id=='pr'){
+	genwork(e,"<a href='https://xerelia.ca/punk'>punk records</a> is a lot of things , right now its a notes app and a search bar .<br><br> i created it with two main objectives : accessible anywhere & visually appealing . beyond that i want it to serve the purpose of every digital tool that does not meet either of those two objectives . <br><br> feel free to use it if it suits you .","punk records is a website<br><br>visit xerelia.ca/punk or click <a href='https://xerelia.ca/punk'>here</a> to test it");    
 	}
 
 	
