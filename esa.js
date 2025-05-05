@@ -29,6 +29,7 @@ var foglevel = 'fogl';
 
 const adlist = 
 [
+['sc','sasha\'s cars'],
 ['iatd','i am the devil'],
 ['bs','the body shop'],
 ['bq','burger quest'],
@@ -146,7 +147,11 @@ function newpage(e){
 	}
 	
 	if(e.target.id=='m'){
-	genwork(e,"the BC Dairy Foundation wanted someone to showcase the benefits of drinking milk . the ad they paid for was <a href='https://vimeo.com/groups/132679/videos/5830893'>this one</a> but i think they could do better . that's why i wrote this storyboard . <br><br> while drinking milk is seen as strange by younger generations , it is normalized among gen x and older demographics . this led me to recall a story from my grandmother : as a child , her family would vacation to a cottage on a small island in northern ontario . one of the essential supplies on this vacation was the family cow , who could provide milk on demand . this idea of taking a cow on a boat to keep the family healthy is what inspired my final story . i wanted to show that milk is healthy , quick , and is brought to us by a nice cow .","<img src='ads/m1.jpg'><img src='ads/m2.jpg'><img src='ads/m3.jpg'><img src='ads/m3text.jpg'><img src='ads/m4.jpg'><img src='ads/m5.jpg'><img src='ads/m6.jpg'><img src='ads/m7.jpg'><img src='ads/m8.jpg'>")
+	genwork(e,"the bc dairy foundation wanted someone to showcase the benefits of drinking milk . the ad they paid for was <a href='https://vimeo.com/groups/132679/videos/5830893'>this one</a> but i think they could do better . that's why i wrote this storyboard . <br><br> while drinking milk is seen as strange by younger generations , it is normalized among gen x and older demographics . this led me to recall a story from my grandmother : as a child , her family would vacation to a cottage on a small island in northern ontario . one of the essential supplies on this vacation was the family cow , who could provide milk on demand . this idea of taking a cow on a boat to keep the family healthy is what inspired my final story . i wanted to show that milk is healthy , quick , and is brought to us by a nice cow .","<img src='ads/m1.jpg'><img src='ads/m2.jpg'><img src='ads/m3.jpg'><img src='ads/m3text.jpg'><img src='ads/m4.jpg'><img src='ads/m5.jpg'><img src='ads/m6.jpg'><img src='ads/m7.jpg'><img src='ads/m8.jpg'>")
+	}
+	
+	if(e.target.id=='sc'){
+	genwork(e,"Sasha's Cars is a small business based in toronto ontario . they rent out a small collection of vintage cars for films and photoshoots . <br><br> in late 2023  Sasha reached out to <a href='https://adandad.ca>ad&ad</a> ( the agency i started as my honors thesis ) and we got to work growing his brand . <br><br> over a few weeks i developed Sasha's website from concept to coding to hosting . i used SEO to ensure Sasha's Cars would appear when potential clients google ' toronto picture car rental ' <br><br> the site keeps growing in visitors , but is currently sitting around 50 clicks per month .","<img src='ads/sc1.jpg'><img src='ads/sc2.jpg'><img src='ads/sc3.jpg'><img src='ads/sc4.jpg'>");
 	}
 	
 
