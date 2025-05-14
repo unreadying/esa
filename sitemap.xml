@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
 	<loc>https://esadvertising.ca</loc>
 	<lastmod>2025-05-14</lastmod>
+<image:image>
+    <image:loc>https://esadvertising.ca/ads/ms3.jpg</image:loc>
+    <image:caption>biodegradable ink ad for mountain sky soaps by vancouver based advertiser evan stover</image:caption>
+    <image:title>river friendly 3</image:title>
+  </image:image>
+<image:image>
+    <image:loc>https://esadvertising.ca/ads/tl2.jpg</image:loc>
+    <image:caption>past self ad for concept company timeline by vancouver based advertiser evan stover</image:caption>
+    <image:title>timeline 12</image:title>
+  </image:image>
+ <image:image>
+    <image:loc>https://esadvertising.ca/ads/m6.jpg</image:loc>
+    <image:caption>person drinking milk by vancouver based advertiser evan stover</image:caption>
+    <image:title>bc dairy 6</image:title>
+  </image:image>
+ <image:image>
+    <image:loc>https://esadvertising.ca/notads/401.jpg</image:loc>
+    <image:caption>picture of highway 401 in toronto ontario by vancouver based advertiser evan stover</image:caption>
+    <image:title>401</image:title>
+ </image:image>
 </url>
 
 
