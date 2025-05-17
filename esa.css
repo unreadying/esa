@@ -128,6 +128,10 @@ a{
 	text-align:center;
 }
 
+.flex{
+	display:flex;
+}
+
 
 
 #ab:hover , #ad:hover , #na:hover , .op:hover , #se:hover , #co:hover , #mab:hover , #mad:hover , #mna:hover , .op:hover , #mse:hover , #mco:hover{
@@ -328,6 +332,12 @@ body{
 	margin:0;
 	right:0;
 	padding-bottom:20vh;
+}
+
+.flex{
+	display:flex;
+	flex-direction:column;
+	height:100px;
 }
 
 
