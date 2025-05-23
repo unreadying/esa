@@ -8,7 +8,7 @@ new Image().src='about.png';
 new Image().src='advertising.png';
 new Image().src='settings.png';
 new Image().src='back.png';
-new Image().src='notads/underpass.jpg';
+new Image().src='notads/stover.jpg';
 
 
 document.body.addEventListener("mousedown",newpage,false);
@@ -92,11 +92,11 @@ function newpage(e){
 		window.scrollTo(0,0);
 	}if(e.target.id=="ab" || e.target.id=="mab" || e.target.id=="esa"){
 		cat = 'ab'
-		geninfo(1,"<p><img src='notads/stover1.jpg'><br>evan stover is a settler living on the home-land of the səlilwətaɬ (Tsleil Waututh Nation), the kʷikʷəƛ̓əm (Kwikwetlem First Nation), and the general home of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two aformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative pseudo concept agency called ad&ad which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested , advertising oriented individual with considerable experience in design , programming , illustration , and writing . if you don't believe me , view his work right here on this webpage .</p>")
+		geninfo(1,"<p><img src='notads/stover0.jpeg'><br>evan stover is a settler living on the home-land of the səlilwətaɬ (Tsleil Waututh Nation), the kʷikʷəƛ̓əm (Kwikwetlem First Nation), and the general home of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two aformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative pseudo concept agency called ad&ad which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested , advertising oriented individual with considerable experience in design , programming , illustration , and writing . if you don't believe me , view his work right here on this webpage .</p>")
 		window.scrollTo(0,0);
 	}if(e.target.id=="co" || e.target.id=="mco"){
 		cat = 'co'
-		geninfo(1,"<p class='mobh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by clicking the image above .</p><p class='comh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by tapping the image above .</p>");
+		geninfo(1,"<p class='mobh'><a href='mailto:evan@adandad.ca'><img src='notads/stover.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by clicking the image above .</p><p class='comh'><a href='mailto:evan@adandad.ca'><img src='notads/underpass.jpg'><br></a>hello this is evan speaking , you can get a hold of me through my work email <a href='mailto:evan@adandad.ca'>evan@adandad.ca</a> ; or , if your browser supports it , by tapping the image above .</p>");
 		window.scrollTo(0,0);
 	}if(e.target.id=="se" || e.target.id=="mse"){
 		cat = 'se'
@@ -694,7 +694,7 @@ function menutog(){
 		
 		document.getElementById('me').src='menu.png';
 		if(lastfog==undefined){
-		geninfo(1,"<p><img src='notads/stover.jpg'><br>evan stover is a settler living on the home-land of the səlilwətaɬ (Tsleil Waututh Nation), the kʷikʷəƛ̓əm (Kwikwetlem First Nation), and the general home of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two aformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative pseudo concept agency called <a href='https://adandad.ca'> ad&ad </a> which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested advertising oriented individual with considerable experience in design , programming , illustration and writing . if you don't believe me , view his work right here on this webpage . </p>")
+		geninfo(1,"<p><img src='notads/stover0.jpeg'><br>evan stover is a settler living on the home-land of the səlilwətaɬ (Tsleil Waututh Nation), the kʷikʷəƛ̓əm (Kwikwetlem First Nation), and the general home of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two aformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative pseudo concept agency called <a href='https://adandad.ca'> ad&ad </a> which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested advertising oriented individual with considerable experience in design , programming , illustration and writing . if you don't believe me , view his work right here on this webpage . </p>")
 		}else{
 		lastfog.style.display = "none";
 		lastspan.style.display = "none";
