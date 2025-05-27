@@ -111,7 +111,7 @@ function newpage(e){
 	}
 	
 	if(e.target.id=="iatd"){
-	genwork(e,"'i am the devil' is a commercial for a hot new mobile game . i wanted to make a commercial that would drive interest in both the game and the creator . <br><br>it was written , directed & edited by evan stover .<br><br> it stars Jacob Sulli , Dose Omoruna & evan stover <br><br> total budget was $0","<video width='3840' controls src='ads/iatd.mp4'>");
+	genwork(e,"'i am the devil' is a commercial for a hot new mobile game . i wanted to make a commercial that would drive interest in both the game and the creator . <br><br>it was written , directed & edited by evan stover .<br><br> it stars Jacob Sulli , Dose Omoruna & evan stover <br><br> total budget was $0","<video width='3840' controls> <source src='ads/iatd.mp4' type='video/mp4'><source src='https://xerelia.ca/resources/grad/iatdcomp.mp4 type='video/mp4'></video>");
 	}
 	
 	if(e.target.id=="bs"){
