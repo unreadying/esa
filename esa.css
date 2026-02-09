@@ -99,7 +99,7 @@ a{
 	padding-top:12vw;
 	padding-bottom:3vw;
 	padding-right:5vw;
-	position:fixed;
+	position:absolute;
 	width:fit-content;
 }
 
@@ -113,6 +113,15 @@ a{
 
 .body3{
 	margin-left:49vw;
+	padding-top:12vw;
+	padding-bottom:3vw;
+	padding-right:3vw;
+	position:absolute;
+	padding-bottom:15vh;
+}
+
+.body4{
+	margin-left:60vw;
 	padding-top:12vw;
 	padding-bottom:3vw;
 	padding-right:3vw;
@@ -134,7 +143,7 @@ a{
 
 
 
-#ab:hover , #ad:hover , #na:hover , .op:hover , #se:hover , #co:hover , #mab:hover , #mad:hover , #mna:hover , .op:hover , #mse:hover , #mco:hover{
+#ab:hover , #ad:hover , #na:hover , .op:hover , #se:hover , #co:hover , #mab:hover , #mad:hover , #mna:hover , .op:hover , #mse:hover , #mco:hover, #wd:hover{
 	opacity:0.5;
 	cursor:crosshair;
 }
@@ -161,7 +170,7 @@ p{
 
 img{
 	max-height:50vh;
-	max-width:94vw;
+	max-width:90vw;
 }
 
 .body3 img{
@@ -263,6 +272,15 @@ input[type="range"]::-webkit-slider-thumb{
 
 .mobh{
 	display:block;
+}
+
+.rm{
+text-decoration:underline;
+cursor:pointer;	
+}
+
+.rm:hover{
+opacity:0.5;	
 }
 
 @media screen and (max-aspect-ratio:4/3){

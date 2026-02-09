@@ -29,17 +29,11 @@ var foglevel = 'fogl';
 
 const adlist = 
 [
-['sc','sasha\'s cars'],
-['iatd','i am the devil'],
-['bs','the body shop'],
-['bq','burger quest'],
-['bd','black & decker'],
-['eb','ebay'],
-['ho','honda'],
-['ms','mountain sky'],
-['tl','timeline'],
-['yn','your niche'],
-['m','bc dairy']
+['yn','<p>Niche Spaces</p><img src="ads/yn5.jpg" alt="a mockup of an ad on the subway that points to a chair and reads : sit here if you play ps5"><br><p>sparking community <span class="rm" id="yn">read more</u></span>'],
+['bd','<br><br><br><p>Micheal Bay</p><img src="ads/bd7.jpg" alt="a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill"><br><p>thrilling uses for ordinary items <span class="rm" id="bd">read more</span></p>'],
+['ms','<br><br><br><p>Not Trash</p><img src="ads/ms5.jpg" alt="a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky"><br><p>conscientious advertising <span class="rm" id="ms">read more</span></p>'],
+['tl','<br><br><br><p>Timeline</p><img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <span class="rm" id="tl">read more</u></p>'],
+['bs','<br><br><br><p>Demystify</p><img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <span class="rm" id="bs">read more</u></p>']
 ]
 
 const nadlist = 
@@ -52,10 +46,19 @@ const nadlist =
 ['pr','punk records']
 ]
 
+const wdlist = 
+[
+['a','ad&ad<br><img src="notads/a1.jpg"><br>a new identity <span class="rm" id="a">read more</span>'],
+['pr','<br><br><br>punk records<br><img src="notads/pr3.jpg"><br>the future of computing <span class="rm" id="pr">read more</span>'],
+['qq','<br><br><br>Quarterstaff Quarterly<br><img src="notads/qq1.jpg"><br>quarterly TTRPG zine <span class="rm" id="qq">read more</span>'],
+['sc','<br><br><br>Sasha\'s Cars<br><img src="notads/sc1.jpg"><br>picture car rentals <span class="rm" id="sc">read more</span>'],
+['x','<br><br><br>xerelia<br><img src="notads/x1.jpg"><br>an artist portfolio <span class="rm" id="x">read more</span>']
+]
+
 const indexlist = 
 [
 ['ad','advertising'],
-['na','not advertising'],
+['wd','web design'],
 ['ab','about'],
 ['co','contact'],
 ['se','settings'],
@@ -64,12 +67,19 @@ const indexlist =
 const mindexlist = 
 [
 ['ad','advertising.png'],
-['na','notadvertising.png'],
+['wd','notadvertising.png'],
 ['ab','about.png'],
 ['co','contact.png'],
 ['se','settings.png'],
 ]
 
+const rmlist = 
+{yn:" is not easy to do, but in the wake of the COVID-19 pandemic, community was needed more then ever. <br><br> The goal of this campaign was to spark friendships and social behavior in public spaces. <br><br> The insight was that people often bond over shared interests, we just need to give people a way to declare those interests.<br><img src='ads/yn6.jpg' alt='a mockup of a poster on the the street that denotes a section of the side walk and reads: hang out here if you follow the MCU'>",
+bd:"is an idea used by Black and Decker. <br><br> As far as I can tell, it's suposed to appeal to the male fantasy of solving lifes problems with nothing but a hammer and some nails <br><br> Regardless, it makes for some clever and eye catching ads, so I made these",
+ms:"doesn't take much, and yet most ads end up in the landfill.<br><br>When making ads for an environment focused soap company, it would be a shame to make anything but environment focused advertising.<br><br>Make compost, not trash<br><img src='ads/ms4.jpg' alt='a mockup of a person wearing a shirt that reads 'compostable t shirt, don't pollue -mountain sky'>",
+tl:"means bringing the future and past together.<br><br>the goal given with this breif was to foster connections between seniors and youth.<br><br>since youth tend to see relationships with elders as a waste of time, the ads reframe seniors as a 'future you'.<br><img src='ads/tl6.jpg' alt='a mockup of a streetcar with a large advertisement on the side reading 'youve got a long way to go, why not ask future you for some advice?'><br><img src='ads/tl7.jpg' alt='a mockup of a newspaper ad that reads 'your past self wants to talk dial 1-800-timeline'>"
+}
+	
 
 if(window.localStorage.getItem("fs")!=="null"){
 fs=window.localStorage.getItem("fs");
@@ -81,8 +91,14 @@ setcheck('init');
 
 
 function newpage(e){
+	if(e.target.classList.contains('rm')){
+	e.target.innerHTML=rmlist[e.target.id];
+	e.target.classList.remove('rm');
+	console.log('found rm, returning');
+	return;
+	}
 	
-	if(e.target.id=="ad" || e.target.id=="mad"){
+	if(e.target.id=="ad" || e.target.id=="mad" || e.target.id=="esa"){
 		cat = 'ad';
 		geninfo(1,genadlist());
 		window.scrollTo(0,0);
@@ -90,7 +106,11 @@ function newpage(e){
 		cat = 'na'
 		geninfo(1,gennadlist());
 		window.scrollTo(0,0);
-	}if(e.target.id=="ab" || e.target.id=="mab" || e.target.id=="esa"){
+	}if(e.target.id=="wd" || e.target.id=="mwd"){
+		cat = 'wd'
+		geninfo(1,genwdlist());
+		window.scrollTo(0,0);
+	}if(e.target.id=="ab" || e.target.id=="mab" ){
 		cat = 'ab'
 		geninfo(1,"<p><img src='notads/stover0.jpeg'><br>evan stover is a settler living on the home-land of the səlilwətaɬ (Tsleil Waututh Nation), the kʷikʷəƛ̓əm (Kwikwetlem First Nation), and the general home of the Coast Salish People . he has spent the past four years studying advertising at ontario's college of art and design ( ocad ) , where he was mentored by genius advertisers like Christine Scott and Pi'ikea Clark . under the supervision of the two aformentioned advertiser-professors , stover completed an 'undergrad thesis' called 'the world needs more advertising' . stovers thesis quickly snowballed into an international collaborative pseudo concept agency called ad&ad which aims to bring big budget advertising to no budget businesses . evan stover is a versatile , untested , advertising oriented individual with considerable experience in design , programming , illustration , and writing . if you don't believe me , view his work right here on this webpage .</p>")
 		window.scrollTo(0,0);
@@ -101,6 +121,7 @@ function newpage(e){
 	}if(e.target.id=="se" || e.target.id=="mse"){
 		cat = 'se'
 		geninfo(1,"<p>font size<br><br><br><span id='small' class='small btn'>small</span><span id='medium' class='medium btn'>medium</span><span id='large' class='large btn'>large</span><br><br><br><br><br><br><br><br>onionskin effect<br><br><br><span id='off' class='off btn'>off</span><span id='low' class='low btn'>low</span><span class='comh'><br><br><br></span><span id='mediumo' class='mediumo btn'>medium</span><span id='high' class='higho btn'>high</span></p>");
+		console.log('entering settings');
 		window.scrollTo(0,0);
 	setcheck(e);
 	}
@@ -174,10 +195,6 @@ function newpage(e){
 	
 	if(e.target.id=="ss"){
 	genwork(e,"a reduction wood block print i made , based off of a 35mm film photo <br><br> 10 x 12 inch oil print on Japanese kozo paper","<img src='notads/ss2.jpg'><br><br><img src='notads/ss1.jpg'>");
-	}
-
-	if(e.target.id=="wd"){
-	genwork(e,"i've been coding websites since 2022 <br><br> as an artistic medium javascript is very freeing","<br><a href='https://adandad.ca'>advertising & advertisements</a> <br><br> <a href='https://sashascars.ca'>sasha's cars</a><br><br><a href='https://xerelia.ca'>xerelia</a><br><br>and of course <a href='https://esadvertising.ca'>this very site</a>");
 	}
 	
 	if(e.target.id=='pr'){
@@ -416,6 +433,14 @@ function gennadlist(){
 		return div;
 }
 
+function genwdlist(){
+	var div='';
+		for(i=0;i<wdlist.length;i++){
+		div += "<p class='op' id='"+wdlist[i][0]+"'>"+wdlist[i][1]+"</p><br>"
+		}
+		return div;
+}
+
 function genindexlist(){
 	var div='';
 	for(i=0;i<indexlist.length;i++){
@@ -556,6 +581,31 @@ function geninfo(body,content){
 		
 		}
 		
+		if(cat == 'wd'){
+			
+			if(document.getElementById('ad')!=null){
+		document.getElementById('ad').removeAttribute('id');
+			}
+			if(document.getElementById('na')!=null){
+		document.getElementById('wd').removeAttribute('id');
+			}
+			if(document.getElementById('ab')!=null){
+		document.getElementById('ab').removeAttribute('id');
+			}
+			if(document.getElementById('se')!=null){
+		document.getElementById('se').removeAttribute('id');
+			}
+			if(document.getElementById('co')!=null){
+		document.getElementById('co').removeAttribute('id');
+			}
+		
+		var div = document.createElement("div");
+		div.innerHTML = genindexlist();
+		div.classList.add("menu");
+		document.querySelector(".content").appendChild(div);
+		
+		}
+		
 		if(cat == 'na'){
 			if(document.getElementById('ad')!=null){
 		document.getElementById('ad').removeAttribute('id');
@@ -581,6 +631,7 @@ function geninfo(body,content){
 		}
 		
 		if(cat == 'se'){
+			console.log('generating settings menu with body =',body,'and content=',content);
 			if(document.getElementById('ad')!=null){
 		document.getElementById('ad').removeAttribute('id');
 			}
@@ -622,6 +673,7 @@ function geninfo(body,content){
 		var div = document.createElement("div");
 		div.innerHTML = genindexlist();
 		div.classList.add("menu");
+		console.log('appending',div.innerHTML,'to .content');
 		document.querySelector(".content").appendChild(div);
 		
 		}

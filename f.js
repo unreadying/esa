@@ -18,6 +18,7 @@ var turn = false;
 
 //shape variables , these are all modified by the user
 //width of ellipse
+//width of ellipse
 var a = 20;
 //height of ellipse
 var b = 110;
