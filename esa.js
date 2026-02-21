@@ -30,10 +30,10 @@ var foglevel = 'fogl';
 const adlist = 
 [
 ['yn','<div class="rm" id="yn"><img src="ads/yn5.jpg" alt="a mockup of an ad on the subway that points to a chair and reads : sit here if you play ps5"><br><p>sparking community <u>read more</u></div>'],
-['bd','<div class="rm" id="bd"><br><br><br><img src="ads/bd7.jpg" alt="a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill"><br><p>thrilling uses for ordinary items <u>read more</u></p></div>'],
-['ms','<div class="rm" id="ms"><br><br><br><img src="ads/ms5.jpg" alt="a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky"><br><p>conscientious advertising <u>read more</u></p></div>'],
-['tl','<div class="rm" id="tl"><br><br><br><img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <u>read more</u></p><div>'],
-['bs','<div class="rm" id="bs"><br><br><br><img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <u>read more</u></p><div>']
+['bd','<br><br><br><div class="rm" id="bd"><img src="ads/bd7.jpg" alt="a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill"><br><p>thrilling uses for ordinary items <u>read more</u></p></div>'],
+['ms','<br><br><br><div class="rm" id="ms"><img src="ads/ms5.jpg" alt="a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky"><br><p>conscientious advertising <u>read more</u></p></div>'],
+['tl','<br><br><br><div class="rm" id="tl"><img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <u>read more</u></p><div>'],
+['bs','<br><br><br><div class="rm" id="bs"><img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <u>read more</u></p><div>']
 ]
 
 const nadlist = 
