@@ -14,7 +14,7 @@ new Image().src='notads/stover.jpg';
 document.body.addEventListener("mousedown",newpage,false);
 
 
-var cat = 'ab';
+var cat = 'ad';
 var menu = false;
 var sc=false;
 var lastfog;
@@ -29,11 +29,11 @@ var foglevel = 'fogl';
 
 const adlist = 
 [
-['yn','<p>Niche Spaces</p><img src="ads/yn5.jpg" alt="a mockup of an ad on the subway that points to a chair and reads : sit here if you play ps5"><br><p>sparking community <span class="rm" id="yn">read more</u></span>'],
-['bd','<br><br><br><p>Micheal Bay</p><img src="ads/bd7.jpg" alt="a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill"><br><p>thrilling uses for ordinary items <span class="rm" id="bd">read more</span></p>'],
-['ms','<br><br><br><p>Not Trash</p><img src="ads/ms5.jpg" alt="a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky"><br><p>conscientious advertising <span class="rm" id="ms">read more</span></p>'],
-['tl','<br><br><br><p>Timeline</p><img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <span class="rm" id="tl">read more</u></p>'],
-['bs','<br><br><br><p>Demystify</p><img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <span class="rm" id="bs">read more</u></p>']
+['yn','<div class="rm" id="yn"><img src="ads/yn5.jpg" alt="a mockup of an ad on the subway that points to a chair and reads : sit here if you play ps5"><br><p>sparking community <u>read more</u></div>'],
+['bd','<div class="rm" id="bd"><br><br><br><img src="ads/bd7.jpg" alt="a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill"><br><p>thrilling uses for ordinary items <u>read more</u></p></div>'],
+['ms','<div class="rm" id="ms"><br><br><br><img src="ads/ms5.jpg" alt="a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky"><br><p>conscientious advertising <u>read more</u></p></div>'],
+['tl','<div class="rm" id="tl"><br><br><br><img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <u>read more</u></p><div>'],
+['bs','<div class="rm" id="bs"><br><br><br><img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <u>read more</u></p><div>']
 ]
 
 const nadlist = 
@@ -48,11 +48,11 @@ const nadlist =
 
 const wdlist = 
 [
-['a','ad&ad<br><img src="notads/a1.jpg"><br>a new identity <span class="rm" id="a">read more</span>'],
-['pr','<br><br><br>punk records<br><img src="notads/pr3.jpg"><br>the future of computing <span class="rm" id="pr">read more</span>'],
-['qq','<br><br><br>Quarterstaff Quarterly<br><img src="notads/qq1.jpg"><br>quarterly TTRPG zine <span class="rm" id="qq">read more</span>'],
-['sc','<br><br><br>Sasha\'s Cars<br><img src="notads/sc1.jpg"><br>picture car rentals <span class="rm" id="sc">read more</span>'],
-['x','<br><br><br>xerelia<br><img src="notads/x1.jpg"><br>an artist portfolio <span class="rm" id="x">read more</span>']
+['a','<div class="rm" id="a"><img src="notads/a1.jpg"><br>a new identity <u>read more</u></div>'],
+['pr','<br><br><br><div class="rm" id="pr"><img src="notads/pr3.jpg"><br>the future of computing <u>read more</u></div>'],
+['qq','<br><br><br><div class="rm" id="qq"><img src="notads/qq1.jpg"><br>quarterly TTRPG zine <u>read more</u></div>'],
+['sc','<br><br><br><div class="rm" id="sc"><img src="notads/sc1.jpg"><br>picture car rentals <u>read more</u></div>'],
+['x','<br><br><br><div class="rm" id="x"><img src="notads/x1.jpg"><br>an artist portfolio <u>read more</u></div>']
 ]
 
 const indexlist = 
@@ -74,10 +74,30 @@ const mindexlist =
 ]
 
 const rmlist = 
-{yn:" is not easy to do, but in the wake of the COVID-19 pandemic, community was needed more then ever. <br><br> The goal of this campaign was to spark friendships and social behavior in public spaces. <br><br> The insight was that people often bond over shared interests, we just need to give people a way to declare those interests.<br><img src='ads/yn6.jpg' alt='a mockup of a poster on the the street that denotes a section of the side walk and reads: hang out here if you follow the MCU'>",
-bd:"is an idea used by Black and Decker. <br><br> As far as I can tell, it's suposed to appeal to the male fantasy of solving lifes problems with nothing but a hammer and some nails <br><br> Regardless, it makes for some clever and eye catching ads, so I made these",
-ms:"doesn't take much, and yet most ads end up in the landfill.<br><br>When making ads for an environment focused soap company, it would be a shame to make anything but environment focused advertising.<br><br>Make compost, not trash<br><img src='ads/ms4.jpg' alt='a mockup of a person wearing a shirt that reads 'compostable t shirt, don't pollue -mountain sky'>",
-tl:"means bringing the future and past together.<br><br>the goal given with this breif was to foster connections between seniors and youth.<br><br>since youth tend to see relationships with elders as a waste of time, the ads reframe seniors as a 'future you'.<br><img src='ads/tl6.jpg' alt='a mockup of a streetcar with a large advertisement on the side reading 'youve got a long way to go, why not ask future you for some advice?'><br><img src='ads/tl7.jpg' alt='a mockup of a newspaper ad that reads 'your past self wants to talk dial 1-800-timeline'>"
+{yn:"<img src='ads/yn5.jpg' alt='a mockup of an ad on the subway that points to a chair and reads 'sit here if you play ps5''><br><p>sparking community is not easy to do, but in the wake of the COVID-19 pandemic, community was needed more then ever. <br><br> The goal of this campaign was to spark friendships and social behavior in public spaces. <br><br> The insight was that people often bond over shared interests, we just need to give people a way to declare those interests.<br><img src='ads/yn6.jpg' alt='a mockup of a poster on the the street that denotes a section of the side walk and reads: hang out here if you follow the MCU'><br><u>read less</u>",
+bd:"<img src='ads/bd7.jpg' alt='a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill'><br><p>thrilling uses for ordinary items is an idea used by Black and Decker. <br><br> As far as I can tell, it's suposed to appeal to the male fantasy of solving lifes problems with nothing but a hammer and some nails <br><br> Regardless, it makes for some clever and eye catching ads, so I made these",
+ms:"<img src='ads/ms5.jpg' alt='a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky'><br><p>conscientious advertising doesn't take much, and yet most ads end up in the landfill.<br><br>When making ads for an environment focused soap company, it would be a shame to make anything but environment focused advertising.<br><br>Make compost, not trash<br><img src='ads/ms4.jpg' alt='a mockup of a person wearing a shirt that reads 'compostable t shirt, don't pollue -mountain sky'>",
+tl:"<img src='ads/tl5.jpg' alt='a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?'><br><p>bringing the young and old together means bringing the future and past together.<br><br>the goal given with this breif was to foster connections between seniors and youth.<br><br>since youth tend to see relationships with elders as a waste of time, the ads reframe seniors as a 'future you'.<br><img src='ads/tl6.jpg' alt='a mockup of a streetcar with a large advertisement on the side reading 'youve got a long way to go, why not ask future you for some advice?'><br><img src='ads/tl7.jpg' alt='a mockup of a newspaper ad that reads 'your past self wants to talk dial 1-800-timeline'>",
+bs:"<img src='ads/bs9.jpg' alt='a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable'><br><p>clearing up the facts is a nessesity when your brand is built on ethical practices</p>",
+a:'<img src="notads/a1.jpg"><br>a new identity',
+pr:'<img src="notads/pr3.jpg"><br>the future of computing',
+qq:'<img src="notads/qq1.jpg"><br>quarterly TTRPG zine',
+sc:'<img src="notads/sc1.jpg"><br>picture car rentals',
+x:'<img src="notads/x1.jpg"><br>an artist portfolio'
+
+}
+
+const rllist =
+{yn:"<img src='ads/yn5.jpg' alt='a mockup of an ad on the subway that points to a chair and reads 'sit here if you play ps5''><br><p>sparking community <u>read more</u></p>",
+bd:'<img src="ads/bd7.jpg" alt="a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill"><br><p>thrilling uses for ordinary items <u>read more</u></p>',
+ms:'<img src="ads/ms5.jpg" alt="a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky"><br><p>conscientious advertising <u>read more</u></p>',
+tl:'<img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <u>read more</u></p>',
+bs:'<img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <u>read more</u></p>',
+a:'<img src="notads/a1.jpg"><br>a new identity',
+pr:'<img src="notads/pr3.jpg"><br>the future of computing',
+qq:'<img src="notads/qq1.jpg"><br>quarterly TTRPG zine',
+sc:'<img src="notads/sc1.jpg"><br>picture car rentals',
+x:'<img src="notads/x1.jpg"><br>an artist portfolio'
 }
 	
 
@@ -91,12 +111,22 @@ setcheck('init');
 
 
 function newpage(e){
-	if(e.target.classList.contains('rm')){
-	e.target.innerHTML=rmlist[e.target.id];
-	e.target.classList.remove('rm');
+	console.log(e);
+	var div=e.target.closest('div')
+	if(div.classList.contains('rl')){
+	div.innerHTML=rllist[div.id];
+	div.classList.remove('rl');
+	console.log('found rl, returning');
+	return;
+	}
+	if(div.classList.contains('rm')){
+	div.innerHTML=rmlist[div.id];
+	div.classList.add('rl');
 	console.log('found rm, returning');
 	return;
 	}
+	
+	
 	
 	if(e.target.id=="ad" || e.target.id=="mad" || e.target.id=="esa"){
 		cat = 'ad';
