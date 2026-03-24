@@ -275,12 +275,13 @@ input[type="range"]::-webkit-slider-thumb{
 }
 
 .rm{
-
+padding:1px;
+border:1px dashed transparent;
 cursor:pointer;	
 }
 
 .rm:hover{
-opacity:0.75;	
+border:1px dashed black;
 }
 
 @media screen and (max-aspect-ratio:4/3){

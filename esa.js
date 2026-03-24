@@ -11,7 +11,7 @@ new Image().src='back.png';
 new Image().src='notads/stover.jpg';
 
 
-document.body.addEventListener("mousedown",newpage,false);
+document.body.addEventListener("click",newpage,false);
 
 
 var cat = 'ad';
@@ -32,8 +32,8 @@ const adlist =
 ['yn','<div class="rm" id="yn"><img src="ads/yn5.jpg" alt="a mockup of an ad on the subway that points to a chair and reads : sit here if you play ps5"><br><p>sparking community <u>read more</u></div>'],
 ['bd','<br><br><br><div class="rm" id="bd"><img src="ads/bd7.jpg" alt="a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill"><br><p>thrilling uses for ordinary items <u>read more</u></p></div>'],
 ['ms','<br><br><br><div class="rm" id="ms"><img src="ads/ms5.jpg" alt="a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky"><br><p>conscientious advertising <u>read more</u></p></div>'],
-['tl','<br><br><br><div class="rm" id="tl"><img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <u>read more</u></p><div>'],
-['bs','<br><br><br><div class="rm" id="bs"><img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <u>read more</u></p><div>']
+['tl','<br><br><br><div class="rm" id="tl"><img src="ads/tl5.jpg" alt="a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?"><br><p>bringing the young and old together <u>read more</u></p></div>'],
+['bs','<br><br><br><div class="rm" id="bs"><img src="ads/bs9.jpg" alt="a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable"><br><p>clearing up the facts <u>read more</u></p></div>']
 ]
 
 const nadlist = 
@@ -75,10 +75,10 @@ const mindexlist =
 
 const rmlist = 
 {yn:"<img src='ads/yn5.jpg' alt='a mockup of an ad on the subway that points to a chair and reads 'sit here if you play ps5''><br><p>sparking community is not easy to do, but in the wake of the COVID-19 pandemic, community was needed more then ever. <br><br> The goal of this campaign was to spark friendships and social behavior in public spaces. <br><br> The insight was that people often bond over shared interests, we just need to give people a way to declare those interests.<br><img src='ads/yn6.jpg' alt='a mockup of a poster on the the street that denotes a section of the side walk and reads: hang out here if you follow the MCU'><br><u>read less</u>",
-bd:"<img src='ads/bd7.jpg' alt='a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill'><br><p>thrilling uses for ordinary items is an idea used by Black and Decker. <br><br> As far as I can tell, it's suposed to appeal to the male fantasy of solving lifes problems with nothing but a hammer and some nails <br><br> Regardless, it makes for some clever and eye catching ads, so I made these",
-ms:"<img src='ads/ms5.jpg' alt='a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky'><br><p>conscientious advertising doesn't take much, and yet most ads end up in the landfill.<br><br>When making ads for an environment focused soap company, it would be a shame to make anything but environment focused advertising.<br><br>Make compost, not trash<br><img src='ads/ms4.jpg' alt='a mockup of a person wearing a shirt that reads 'compostable t shirt, don't pollue -mountain sky'>",
-tl:"<img src='ads/tl5.jpg' alt='a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?'><br><p>bringing the young and old together means bringing the future and past together.<br><br>the goal given with this breif was to foster connections between seniors and youth.<br><br>since youth tend to see relationships with elders as a waste of time, the ads reframe seniors as a 'future you'.<br><img src='ads/tl6.jpg' alt='a mockup of a streetcar with a large advertisement on the side reading 'youve got a long way to go, why not ask future you for some advice?'><br><img src='ads/tl7.jpg' alt='a mockup of a newspaper ad that reads 'your past self wants to talk dial 1-800-timeline'>",
-bs:"<img src='ads/bs9.jpg' alt='a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable'><br><p>clearing up the facts is a nessesity when your brand is built on ethical practices</p>",
+bd:"<img src='ads/bd7.jpg' alt='a mockup of an ad at a bus stop with a spy escaping assailants through an air vent using nothing but a black and decker cordless drill'><br><p>thrilling uses for ordinary items is an idea used by Black and Decker. <br><br> Taking inspiration from their <a href='https://www.youtube.com/watch?v=GSJ4Y0ghUME'>campaign directed by Micheal Bay,</a> <br><br> I decided to draw some sketches that show how they could bring the same energy into the realm of print.<br><br><img src='ads/bd2.jpg' alt='a rough sketch showing a man crawling away from assailants inside an air vent, with a black and decker drill'><br><br>The intention behind these sketches would be to use them as references for a product photoshoot.<br><br><img src='ads/bd4.jpg' alt='a rough sketch showing a man escaping assailants by cutting the cables connecting his train car from theirs using a black and decker reciprocating saw'><br><u>read less</u>",
+ms:"<img src='ads/ms5.jpg' alt='a mockup of a billboard that reads : printed with biodegradable ink, use sustainable products -mountain sky'><br><p>conscientious advertising doesn't take much, and yet most ads end up in the landfill.<br><br>When making ads for an environment focused soap company, it would be a shame to make anything but environment focused advertising.<br><br>Make compost, not trash<br><img src='ads/ms4.jpg' alt='a mockup of a person wearing a shirt that reads 'compostable t shirt, don't pollue -mountain sky'><br><br><img src='ads/ms2.jpg' alt='an ad that reads 'printed on compostable paper, use sustainable products -mountainsky'><u>read less</u>",
+tl:"<img src='ads/tl5.jpg' alt='a mockup of an ad at a bus stop that reads : you see your past self waiting for the bus, what do you talk about?'><br><p>bringing the young and old together means bringing the future and past together.<br><br>the goal given with this breif was to foster connections between seniors and youth.<br><br>since youth tend to see relationships with elders as a waste of time, the ads reframe seniors as a 'future you'.<br><img src='ads/tl6.jpg' alt='a mockup of a streetcar with a large advertisement on the side reading 'youve got a long way to go, why not ask future you for some advice?'><br><img src='ads/tl7.jpg' alt='a mockup of a newspaper ad that reads 'your past self wants to talk dial 1-800-timeline'><u>read less</u>",
+bs:"<img src='ads/bs9.jpg' alt='a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable'><br><p>clearing up the facts is a nessesity when your brand is built on ethical practices;<br><br>This is especially true for The Body Shop, who's recent changes in owership have left consumers perplexed about the companies values. <br> <img src='ads/bs8.jpg' alt='a mockup of a tarot card and beside it an ad that reads : in other words : we are always sustainable'><u>read less</u>",
 a:'<img src="notads/a1.jpg"><br>a new identity',
 pr:'<img src="notads/pr3.jpg"><br>the future of computing',
 qq:'<img src="notads/qq1.jpg"><br>quarterly TTRPG zine',
@@ -111,7 +111,9 @@ setcheck('init');
 
 
 function newpage(e){
+	
 	console.log(e);
+	if (e.target.closest("a")) return;
 	var div=e.target.closest('div')
 	if(div.classList.contains('rl')){
 	div.innerHTML=rllist[div.id];
