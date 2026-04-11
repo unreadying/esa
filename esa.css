@@ -277,7 +277,8 @@ input[type="range"]::-webkit-slider-thumb{
 .rm{
 padding:1px;
 border:1px dashed transparent;
-cursor:pointer;	
+cursor:pointer;
+width:fit-content;	
 }
 
 .rm:hover{
